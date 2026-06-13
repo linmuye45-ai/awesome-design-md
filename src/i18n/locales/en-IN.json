@@ -1,0 +1,593 @@
+{
+  "app": {
+    "name": "ATLAS",
+    "tagline": "The AI business operating system for small businesses"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "dismiss": "Dismiss",
+    "approve": "Approve",
+    "execute": "Execute",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "loading": "Loading...",
+    "all": "All",
+    "search": "Search",
+    "today": "Today",
+    "amount": "Amount",
+    "date": "Date",
+    "category": "Category",
+    "status": "Status",
+    "description": "Description",
+    "notes": "Notes",
+    "name": "Name",
+    "role": "Role",
+    "phone": "Phone",
+    "email": "Email",
+    "draft": "Draft",
+    "send": "Send",
+    "generate": "Generate",
+    "viewAll": "View all",
+    "comingSoon": "Coming soon",
+    "mock": "Mock",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "yes": "Yes",
+    "no": "No",
+    "optional": "optional",
+    "hidden": "Hidden",
+    "restricted": "Restricted",
+    "download": "Download"
+  },
+  "nav": {
+    "today": "Today",
+    "ask": "Ask ATLAS",
+    "ledger": "Ledger",
+    "capture": "Receipts",
+    "cashflow": "Cashflow",
+    "actions": "Actions",
+    "team": "Team",
+    "schedule": "Schedule",
+    "customers": "Customers",
+    "reports": "Reports",
+    "network": "Network",
+    "settings": "Settings"
+  },
+  "demo": {
+    "banner": "Demo data anchored to {date}. New entries use the real current time."
+  },
+  "onboarding": {
+    "title": "Welcome to ATLAS",
+    "subtitle": "Set up your business in under a minute. ATLAS will start working for you today.",
+    "stepBusinessType": "What kind of business do you run?",
+    "stepBusinessName": "What is your business called?",
+    "businessNamePlaceholder": "e.g. Sunrise Noodle House",
+    "stepCountry": "Where is your business located?",
+    "stepCurrency": "What currency do you use?",
+    "stepUiLanguage": "Interface language",
+    "stepAiLanguage": "AI advisor language",
+    "stepEmployees": "How many people work here?",
+    "useDemoData": "Start with demo data so I can explore",
+    "useDemoDataHint": "You can clear it anytime in Settings.",
+    "type": {
+      "restaurant": "Restaurant & Food",
+      "retail": "Retail & Shop",
+      "beauty": "Beauty & Salon",
+      "education": "Training & Education",
+      "local_service": "Local Service",
+      "freelance": "Freelance Team",
+      "other": "Other"
+    },
+    "employeeRange": {
+      "1-5": "1-5 people",
+      "6-15": "6-15 people",
+      "16-30": "16-30 people",
+      "31-50": "31-50 people",
+      "50+": "50+ people"
+    },
+    "finishCta": "Enter ATLAS",
+    "step": "Step {current} of {total}"
+  },
+  "dashboard": {
+    "title": "Today",
+    "greeting": "Here is your business at a glance, {name}",
+    "aiJudgment": "ATLAS's read on today",
+    "judgmentSafe": "Today you took in {revenue} and spent {expenses}, keeping {profit}. Cash is safe for the next 7 days — keep the momentum.",
+    "judgmentWatch": "Today you took in {revenue} and spent {expenses}, keeping {profit}. A tight day is coming within 7 days — review the top action below.",
+    "judgmentDanger": "Today you took in {revenue} and spent {expenses}, keeping {profit}. Cash may dip below your safety line of {safety} — act on the top action now.",
+    "todayRevenue": "Today's revenue",
+    "todayExpenses": "Today's expenses",
+    "estimatedGrossProfit": "Estimated gross profit",
+    "availableCash": "Available cash",
+    "cashflowRisk": "7-day cashflow risk",
+    "vsYesterday": "vs yesterday",
+    "topActions": "Top 3 actions today",
+    "askPlaceholder": "Ask ATLAS about your business...",
+    "voiceHint": "Voice input",
+    "quickActions": "Quick actions",
+    "quickAddTransaction": "Add transaction",
+    "quickCapture": "Scan receipt",
+    "quickCollect": "Chase payment",
+    "quickSchedule": "Build schedule",
+    "meaningProfit": "After costs, this is what you actually kept today.",
+    "meaningCash": "This is the money you can use right now.",
+    "riskSafe": "Cash looks safe for the next 7 days.",
+    "riskWatch": "Watch closely — a tight day is coming.",
+    "riskDanger": "Action needed — cash may drop below your safety line.",
+    "summaryOnly": "You are seeing a limited summary based on your role."
+  },
+  "action": {
+    "reason": "Why",
+    "impact": "Expected impact",
+    "confidence": "Confidence",
+    "amountInvolved": "Amount involved",
+    "draft": "Draft",
+    "approved": "Approved",
+    "executed": "Done",
+    "dismissed": "Dismissed",
+    "draftReady": "Draft ready for your review",
+    "evidence": "Evidence",
+    "executeConfirmTitle": "Execute this action?",
+    "executeConfirmBody": "ATLAS will record this action and write an audit log. In this demo nothing is actually sent.",
+    "type": {
+      "collect_payment": "Collect payment",
+      "delay_payment": "Delay supplier payment",
+      "customer_winback": "Win back customer",
+      "review_reply": "Reply to review",
+      "schedule_adjustment": "Adjust schedule",
+      "supplier_negotiation": "Negotiate with supplier",
+      "inventory_reminder": "Restock inventory",
+      "monthly_review": "Monthly review"
+    }
+  },
+  "actions": {
+    "title": "Action Center",
+    "subtitle": "ATLAS drafts the work. You approve and stay in control.",
+    "empty": "No pending actions. You are all caught up.",
+    "draftFirst": "ATLAS prepares a draft first. Nothing is sent until you approve.",
+    "toastApproved": "Action approved",
+    "toastExecuted": "Action executed (mock)",
+    "toastDismissed": "Action dismissed",
+    "toastDrafted": "Draft added to Action Center",
+    "filterAll": "All",
+    "filterDraft": "Drafts",
+    "filterApproved": "Approved",
+    "filterExecuted": "Done",
+    "filterDismissed": "Dismissed",
+    "pendingCount": "{count} drafts waiting for you"
+  },
+  "ask": {
+    "title": "Ask ATLAS",
+    "subtitle": "Ask about money, customers, staff or what to do next.",
+    "placeholder": "e.g. How much did I make today?",
+    "voicePlaceholder": "Voice input (coming soon)",
+    "advisorLanguage": "AI advisor language",
+    "answer": "Answer",
+    "evidence": "Based on your data",
+    "risk": "Risk to watch",
+    "nextSteps": "Suggested next step",
+    "actionsLabel": "Take action",
+    "suggested": "Try asking",
+    "thinking": "ATLAS is thinking...",
+    "usedTools": "Tools used",
+    "missingData": "Missing data",
+    "clearChat": "Clear chat",
+    "you": "You",
+    "samples": {
+      "revenue": "How much did I make today?",
+      "profitDrop": "Why did profit drop this month?",
+      "payroll": "Can I afford payroll next week?",
+      "churn": "Which customers are about to leave?",
+      "draft": "Write a payment reminder message",
+      "staffing": "How many people should I schedule tomorrow?"
+    }
+  },
+  "ledger": {
+    "title": "Ledger",
+    "subtitle": "Every dollar in and out, organised.",
+    "income": "Income",
+    "expense": "Expenses",
+    "receivables": "Receivables",
+    "payables": "Payables",
+    "addTransaction": "Add transaction",
+    "newTransaction": "New transaction",
+    "type": "Type",
+    "paymentMethod": "Payment method",
+    "forecastCta": "View cashflow forecast",
+    "noTransactions": "No transactions yet. Add your first one.",
+    "due": "Due {date}",
+    "markPaid": "Mark paid",
+    "method": {
+      "cash": "Cash",
+      "card": "Card",
+      "bank": "Bank transfer",
+      "wallet": "Wallet",
+      "other": "Other"
+    },
+    "status": {
+      "open": "Open",
+      "overdue": "Overdue",
+      "paid": "Paid"
+    },
+    "incomeCategory": {
+      "sales": "Sales revenue",
+      "service": "Service revenue",
+      "prepayment": "Prepayment",
+      "other_income": "Other income"
+    },
+    "expenseCategory": {
+      "raw_materials": "Raw materials",
+      "rent": "Rent",
+      "payroll": "Payroll",
+      "utilities": "Utilities",
+      "logistics": "Logistics",
+      "marketing": "Marketing",
+      "platform_commission": "Platform commission",
+      "tax": "Tax",
+      "other_expense": "Other expense"
+    },
+    "toastAdded": "Transaction added"
+  },
+  "capture": {
+    "title": "Receipt Capture",
+    "subtitle": "Snap a receipt. ATLAS reads it for you.",
+    "uploadHint": "Tap to take a photo or upload a receipt",
+    "scanning": "Reading receipt...",
+    "result": "Recognised details",
+    "merchant": "Merchant",
+    "tax": "Tax",
+    "confidence": "Confidence",
+    "lowConfidenceWarning": "Please double-check the highlighted fields before saving.",
+    "fieldLowConfidence": "Low confidence — please verify",
+    "confirmSave": "Confirm & save to ledger",
+    "demoCta": "Run a demo scan",
+    "toastSaved": "Receipt saved to ledger"
+  },
+  "cashflow": {
+    "title": "Cashflow Forecast",
+    "subtitle": "See trouble before it arrives.",
+    "next7": "Next 7 days",
+    "next30": "Next 30 days",
+    "riskDate": "Risk date",
+    "lowestCash": "Lowest projected cash",
+    "projectedCash": "Projected cash",
+    "safetyLine": "Safety line",
+    "impactReceivables": "Receivables impact",
+    "impactPayables": "Payables impact",
+    "impactPayroll": "Payroll impact",
+    "suggestedAction": "Suggested action",
+    "actionCollect": "Draft a payment chase",
+    "actionDelay": "Draft a supplier delay request",
+    "chartCash": "Cash",
+    "chartDay": "Day",
+    "status": {
+      "safe": "Safe",
+      "watch": "Watch",
+      "danger": "Danger"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "subtitle": "Your people, their shifts and tasks.",
+    "clockStatus": "Today's clock-in",
+    "geofence": "Geofence consent",
+    "scheduleCta": "Open schedule",
+    "privacyNotice": "Employee location and geofence attendance require explicit employee consent.",
+    "consentGiven": "Consent given",
+    "consentMissing": "Consent required",
+    "consentOwnerNote": "Only the employee can grant or revoke this consent.",
+    "clockedIn": "Clocked in",
+    "notClockedIn": "Not clocked in",
+    "privateRedacted": "Private contact details are hidden for your role.",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "schedule": {
+    "title": "Schedule Builder",
+    "subtitle": "Cover every shift without overspending.",
+    "generateCta": "Generate schedule with AI",
+    "notifyCta": "Notify employees",
+    "understaffed": "Understaffed",
+    "conflict": "Conflict",
+    "ok": "Covered",
+    "estimatedCost": "Estimated weekly labour cost",
+    "conflictsFound": "{count} conflicts detected",
+    "toastGenerated": "AI schedule draft created in Action Center",
+    "toastNotified": "Employees notified (mock)",
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    }
+  },
+  "customers": {
+    "title": "Customers",
+    "subtitle": "Know who is loyal, who is leaving.",
+    "totalSpend": "Total spend",
+    "visits": "Visits",
+    "lastVisit": "Last visit",
+    "winbackCta": "Draft win-back message",
+    "winbackTitle": "Win-back message",
+    "winbackConfirm": "Add to Action Center",
+    "atRiskCount": "{count} customers need attention",
+    "segment": {
+      "high_value": "High value",
+      "new": "New",
+      "at_risk": "At risk",
+      "price_sensitive": "Price sensitive",
+      "dormant": "Dormant"
+    }
+  },
+  "reports": {
+    "title": "Monthly Report",
+    "subtitle": "Your business diagnosis in plain language.",
+    "generateCta": "Generate this month's report",
+    "exportPdf": "Export PDF",
+    "headline": "One-line summary",
+    "headlineBody": "Revenue held steady this month while costs crept up; protect your margin and chase overdue receivables.",
+    "keyMetrics": "Key metrics",
+    "goodNews": "Three good things",
+    "good1": "Weekend sales are your strongest channel and still growing.",
+    "good2": "High-value customers keep returning and lift the average ticket.",
+    "good3": "Receipt capture keeps your books up to date with little effort.",
+    "alerts": "Two alerts",
+    "alert1": "Overdue receivables are tying up cash you could use now.",
+    "alert2": "Raw-material costs are above the peer benchmark.",
+    "profitChange": "Why profit changed",
+    "profitChangeBody": "Profit moved mainly because raw-material costs rose faster than revenue this month.",
+    "cashflowRisk": "Cashflow risk",
+    "cashflowRiskBody": "A tight window appears next week when supplier payments and payroll overlap.",
+    "teamSummary": "Team summary",
+    "teamSummaryBody": "Staffing matched demand on weekdays; weekends were occasionally understaffed.",
+    "customerSummary": "Customer summary",
+    "customerSummaryBody": "A few loyal customers drive most revenue; one dormant account is worth winning back.",
+    "mostImportant": "The one thing for next month",
+    "mostImportantBody": "Collect the overdue receivables and renegotiate raw-material pricing.",
+    "recommendedActions": "Recommended actions",
+    "advisorLanguageNote": "Report language follows your AI advisor language: {language}",
+    "toastExport": "PDF export coming soon"
+  },
+  "network": {
+    "title": "Peer Network",
+    "subtitle": "Compare with similar businesses, anonymously.",
+    "grossMarginRange": "Industry gross margin range",
+    "yourMargin": "Your margin",
+    "costStructure": "Cost structure comparison",
+    "you": "You",
+    "peers": "Peers",
+    "groupBuying": "Group buying interest",
+    "supplierRecs": "Supplier recommendations",
+    "industryAlerts": "Industry alerts",
+    "anonymityNotice": "All peer data is aggregated and anonymised. No single business can be identified.",
+    "sampleSize": "Based on {count} similar businesses",
+    "kAnonymityBlocked": "Not enough similar businesses yet to show this anonymously (need at least {min}).",
+    "participants": "{count} interested",
+    "joinGroupBuy": "Express interest"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Languages, formats, privacy and compliance.",
+    "localization": "Language & format",
+    "interfaceLanguage": "Interface language",
+    "aiAdvisorLanguage": "AI advisor language",
+    "country": "Country / region",
+    "currency": "Currency",
+    "numberFormat": "Number format",
+    "dateFormat": "Date format",
+    "formatPreview": "Preview",
+    "previewCurrency": "Currency",
+    "previewNumber": "Number",
+    "previewDate": "Date",
+    "previewPercent": "Percent",
+    "privacy": "Employee privacy",
+    "permissions": "Permissions",
+    "roleSimulator": "Role simulator",
+    "roleSimulatorHint": "Preview ATLAS as a different role. This changes what you can see and do.",
+    "dataExport": "Data export",
+    "compliance": "Compliance",
+    "demoMode": "Demo mode",
+    "demoModeHint": "When on, dates are anchored so the sample data stays consistent.",
+    "resetDemo": "Reset demo data",
+    "toastReset": "Demo data reset",
+    "exportCta": "Export data (JSON)",
+    "toastExport": "Data export downloaded (mock)",
+    "safetyBuffer": "Cash safety line",
+    "languageIndependentNote": "Your interface language and AI advisor language are independent. For example, browse in Chinese while ATLAS writes reports in English."
+  },
+  "roles": {
+    "owner": "Owner",
+    "manager": "Manager",
+    "accountant": "Accountant",
+    "employee": "Employee",
+    "viewer": "Viewer"
+  },
+  "compliance": {
+    "disclaimer": "ATLAS provides business assistance information and does not replace a certified accountant, lawyer, tax advisor or licensed financial advisor."
+  },
+  "pricing": {
+    "title": "Plans",
+    "free": "Free",
+    "pro": "Pro",
+    "business": "Business",
+    "currentPlan": "Current plan",
+    "upgrade": "Upgrade",
+    "freeDesc": "Daily cashflow, ledger and AI answers for a single owner.",
+    "proDesc": "Action Center, receipts, schedules and monthly reports for a small team.",
+    "businessDesc": "Multi-role permissions, peer network and data export for growing teams."
+  },
+  "validation": {
+    "required": "This field is required",
+    "positiveAmount": "Amount must be greater than zero",
+    "invalidNumber": "Please enter a valid number"
+  },
+  "empty": {
+    "generic": "Nothing here yet."
+  },
+  "country": {
+    "CN": "China",
+    "TW": "Taiwan",
+    "US": "United States",
+    "JP": "Japan",
+    "KR": "South Korea",
+    "MX": "Mexico",
+    "BR": "Brazil",
+    "IN": "India",
+    "ID": "Indonesia",
+    "TH": "Thailand",
+    "VN": "Vietnam",
+    "AE": "United Arab Emirates",
+    "SA": "Saudi Arabia",
+    "GB": "United Kingdom",
+    "SG": "Singapore"
+  },
+  "ai": {
+    "answer": {
+      "finance": "Today you brought in {revenue} and spent {expenses}, so you kept about {profit}.",
+      "cashflowSafe": "You can cover the period ahead. Your lowest projected cash is {lowest}, above your safety line of {safety}.",
+      "cashflowRisk": "Money gets tight soon. Your projected cash dips to {lowest}, below your safety line of {safety}.",
+      "customers": "{count} customers look at risk of leaving and are worth contacting.",
+      "staffing": "{present} of {total} people are clocked in. For tomorrow, about {suggested} on shift looks right.",
+      "draft": "I drafted a message for you to review before anything is sent.",
+      "report": "I can put together a plain-language monthly report for you.",
+      "peer": "Here is how you compare with similar businesses, anonymously.",
+      "compliance": "Here is general guidance — but please confirm specifics with a qualified professional.",
+      "unknown": "I'm not sure yet. Try asking about revenue, cashflow, customers or staff."
+    },
+    "ev": {
+      "todayRevenue": "Revenue today: {amount}",
+      "todayExpenses": "Expenses today: {amount}",
+      "monthRevenue": "Revenue so far: {amount}",
+      "safetyLine": "Safety line: {amount}",
+      "lowestCash": "Lowest projected cash: {amount}",
+      "openReceivables": "{count} open receivables totalling {amount}",
+      "customerVisits": "{name}: {visits} visits",
+      "clockedIn": "{name} is clocked in",
+      "notClockedIn": "{name} is not clocked in",
+      "draftFirst": "Nothing is sent until you approve the draft.",
+      "reportScope": "Covers revenue, costs, cashflow, team and customers.",
+      "anonymity": "All comparisons are aggregated and anonymised."
+    },
+    "risk": {
+      "negativeProfit": "You spent more than you earned today.",
+      "cashflowDanger": "Cash may fall below your safety line within the forecast window.",
+      "churn": "Some loyal customers haven't returned recently."
+    },
+    "next": {
+      "reviewMonth": "Review this month's costs against last month.",
+      "collect": "Chase the overdue receivable first — it frees up the most cash.",
+      "winback": "Send a friendly win-back message to your at-risk regulars.",
+      "schedule": "Adjust tomorrow's schedule to match expected demand.",
+      "generateReport": "Generate the monthly report for the full picture."
+    },
+    "tools": {
+      "getRevenueSummary": "Summarise revenue for a date range.",
+      "getExpenseSummary": "Summarise expenses by category.",
+      "getCashflowForecast": "Project cash for the days ahead.",
+      "getReceivables": "List receivables, optionally by status.",
+      "getPayables": "List payables, optionally by status.",
+      "getTopProducts": "Rank products by revenue or volume.",
+      "getEmployeeAttendance": "Check who is clocked in today.",
+      "getCustomerRiskSegments": "Group customers by churn risk.",
+      "draftMessage": "Draft a message for the owner to review.",
+      "createTask": "Create a task or reminder.",
+      "logAiRecommendation": "Record an AI recommendation in the audit log."
+    }
+  },
+  "mock": {
+    "tx": {
+      "lunchService": "Lunch service",
+      "takeaway": "Takeaway orders",
+      "cateringDeposit": "Catering deposit",
+      "freshProduce": "Fresh produce",
+      "gasRefill": "Gas refill",
+      "deliveryFee": "Delivery platform fee",
+      "dailySales": "Daily sales",
+      "supplierDelivery": "Supplier delivery",
+      "weekendSales": "Weekend sales",
+      "monthlyRent": "Monthly rent"
+    },
+    "receivable": {
+      "companyCatering": "Company catering order",
+      "eventBalance": "Event balance due"
+    },
+    "payable": {
+      "meatSupplier": "Meat supplier invoice",
+      "vegWholesaler": "Vegetable wholesaler invoice",
+      "payroll": "Staff payroll"
+    },
+    "vendor": {
+      "meatSupplier": "Prime Meats Co.",
+      "vegWholesaler": "GreenLeaf Wholesale",
+      "payroll": "Payroll"
+    },
+    "customer": {
+      "hongtuTech": "Hongtu Tech",
+      "mrWang": "Mr. Wang",
+      "lilyChen": "Lily Chen",
+      "zhangFamily": "The Zhang Family",
+      "oldTownOffice": "Old Town Office Park"
+    },
+    "employee": {
+      "chefLiu": "Chef Liu",
+      "mei": "Mei",
+      "jun": "Jun",
+      "auntZhao": "Aunt Zhao",
+      "kevin": "Kevin"
+    },
+    "product": {
+      "beefNoodles": "Beef noodles",
+      "dumplings": "Dumplings",
+      "coldDrinks": "Cold drinks"
+    },
+    "action": {
+      "collectPayment": {
+        "title": "Chase {count} overdue receivables",
+        "reason": "{amount} is overdue and tying up cash you could use now.",
+        "draft": "Hi, just a friendly reminder that an invoice for {amount} is now past due. Could you let us know when payment will arrive? Thank you!",
+        "ev1": "1 receivable is past its due date.",
+        "ev2": "Collecting frees up {amount} of working cash."
+      },
+      "winback": {
+        "title": "Win back a lapsed regular",
+        "reason": "A {visits}-visit regular hasn't returned in {days} days.",
+        "draft": "Hi! We've missed you lately. Come back this week and enjoy a little something on us — we'd love to see you again.",
+        "ev1": "Last visit was {days} days ago."
+      },
+      "delayPayment": {
+        "title": "Request a short supplier extension",
+        "reason": "Delaying {amount} by {days} days smooths a tight cash day.",
+        "draft": "Hi, we value our partnership. Could we extend this {amount} payment by {days} days? We'll confirm the new date in writing.",
+        "ev1": "A payment of {amount} falls on a tight cash day."
+      }
+    },
+    "insight": {
+      "tightCash": {
+        "title": "Cash gets tight next week",
+        "summary": "Supplier payments and payroll overlap with overdue receivables.",
+        "ev1": "Overdue receivables total {amount}.",
+        "ev2": "A payable falls due the same week.",
+        "ev3": "Payroll is scheduled within the window."
+      }
+    },
+    "network": {
+      "groupBuy": {
+        "oil": "Bulk cooking oil purchase",
+        "coldChain": "Shared cold-chain delivery"
+      }
+    }
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "app": {
+    "name": "ATLAS",
+    "tagline": "El sistema operativo de negocios con IA para pequeñas empresas del mundo"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "add": "Agregar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "dismiss": "Descartar",
+    "approve": "Aprobar",
+    "execute": "Ejecutar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Finalizar",
+    "loading": "Cargando…",
+    "all": "Todo",
+    "search": "Buscar",
+    "today": "Hoy",
+    "amount": "Monto",
+    "date": "Fecha",
+    "category": "Categoría",
+    "status": "Estado",
+    "description": "Descripción",
+    "notes": "Notas",
+    "name": "Nombre",
+    "role": "Rol",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "draft": "Borrador",
+    "send": "Enviar",
+    "generate": "Generar",
+    "viewAll": "Ver todo",
+    "comingSoon": "Próximamente",
+    "mock": "Demo",
+    "high": "Alta",
+    "medium": "Media",
+    "low": "Baja",
+    "yes": "Sí",
+    "no": "No",
+    "optional": "opcional",
+    "hidden": "Oculto",
+    "restricted": "Restringido",
+    "download": "Descargar"
+  },
+  "nav": {
+    "today": "Hoy",
+    "ask": "Pregúntale a ATLAS",
+    "ledger": "Libro",
+    "capture": "Recibos",
+    "cashflow": "Flujo de caja",
+    "actions": "Acciones",
+    "team": "Equipo",
+    "schedule": "Horarios",
+    "customers": "Clientes",
+    "reports": "Reportes",
+    "network": "Red de pares",
+    "settings": "Ajustes"
+  },
+  "demo": {
+    "banner": "Datos demo anclados a {date}. Los nuevos registros usan la hora real actual."
+  },
+  "onboarding": {
+    "title": "Bienvenido a ATLAS",
+    "subtitle": "Configura tu negocio en menos de un minuto. ATLAS empezará a trabajar para ti hoy.",
+    "stepBusinessType": "¿Qué tipo de negocio tienes?",
+    "stepBusinessName": "¿Cómo se llama tu negocio?",
+    "businessNamePlaceholder": "p. ej. Fonda El Amanecer",
+    "stepCountry": "¿Dónde está tu negocio?",
+    "stepCurrency": "¿Qué moneda usas?",
+    "stepUiLanguage": "Idioma de la interfaz",
+    "stepAiLanguage": "Idioma del asesor IA",
+    "stepEmployees": "¿Cuántas personas trabajan aquí?",
+    "useDemoData": "Empezar con datos demo para explorar",
+    "useDemoDataHint": "Puedes borrarlos cuando quieras en Ajustes.",
+    "type": {
+      "restaurant": "Restaurante y comida",
+      "retail": "Tienda y comercio",
+      "beauty": "Belleza y salón",
+      "education": "Capacitación y educación",
+      "local_service": "Servicio local",
+      "freelance": "Equipo independiente",
+      "other": "Otro"
+    },
+    "employeeRange": {
+      "1-5": "1-5 personas",
+      "6-15": "6-15 personas",
+      "16-30": "16-30 personas",
+      "31-50": "31-50 personas",
+      "50+": "Más de 50"
+    },
+    "finishCta": "Entrar a ATLAS",
+    "step": "Paso {current} de {total}"
+  },
+  "dashboard": {
+    "title": "Hoy",
+    "greeting": "Aquí está tu negocio de un vistazo, {name}",
+    "aiJudgment": "La lectura de ATLAS sobre hoy",
+    "judgmentSafe": "Hoy ingresaste {revenue} y gastaste {expenses}, quedándote con {profit}. La caja está segura los próximos 7 días: mantén el ritmo.",
+    "judgmentWatch": "Hoy ingresaste {revenue} y gastaste {expenses}, quedándote con {profit}. Viene un día apretado en 7 días: revisa la acción principal abajo.",
+    "judgmentDanger": "Hoy ingresaste {revenue} y gastaste {expenses}, quedándote con {profit}. La caja podría caer debajo de tu línea de seguridad de {safety}: actúa ya.",
+    "todayRevenue": "Ingresos de hoy",
+    "todayExpenses": "Gastos de hoy",
+    "estimatedGrossProfit": "Utilidad bruta estimada",
+    "availableCash": "Efectivo disponible",
+    "cashflowRisk": "Riesgo de caja a 7 días",
+    "vsYesterday": "vs ayer",
+    "topActions": "Top 3 acciones de hoy",
+    "askPlaceholder": "Pregúntale a ATLAS sobre tu negocio…",
+    "voiceHint": "Entrada de voz",
+    "quickActions": "Acciones rápidas",
+    "quickAddTransaction": "Registrar",
+    "quickCapture": "Escanear recibo",
+    "quickCollect": "Cobrar",
+    "quickSchedule": "Armar horario",
+    "meaningProfit": "Después de costos, esto es lo que realmente te quedó hoy.",
+    "meaningCash": "Este es el dinero que puedes usar ahora mismo.",
+    "riskSafe": "La caja luce segura los próximos 7 días.",
+    "riskWatch": "Atento: viene un día apretado.",
+    "riskDanger": "Se requiere acción: la caja podría caer debajo de tu línea de seguridad.",
+    "summaryOnly": "Ves un resumen limitado según tu rol."
+  },
+  "action": {
+    "reason": "Por qué",
+    "impact": "Impacto esperado",
+    "confidence": "Confianza",
+    "amountInvolved": "Monto involucrado",
+    "draft": "Borrador",
+    "approved": "Aprobada",
+    "executed": "Hecho",
+    "dismissed": "Descartada",
+    "draftReady": "Borrador listo para tu revisión",
+    "evidence": "Evidencia",
+    "executeConfirmTitle": "¿Ejecutar esta acción?",
+    "executeConfirmBody": "ATLAS registrará esta acción y escribirá un registro de auditoría. En esta demo no se envía nada en realidad.",
+    "type": {
+      "collect_payment": "Cobrar pago",
+      "delay_payment": "Aplazar pago a proveedor",
+      "customer_winback": "Recuperar cliente",
+      "review_reply": "Responder reseña",
+      "schedule_adjustment": "Ajustar horario",
+      "supplier_negotiation": "Negociar con proveedor",
+      "inventory_reminder": "Resurtir inventario",
+      "monthly_review": "Revisión mensual"
+    }
+  },
+  "actions": {
+    "title": "Centro de Acciones",
+    "subtitle": "ATLAS prepara el trabajo. Tú apruebas y mantienes el control.",
+    "empty": "No hay acciones pendientes. Estás al día.",
+    "draftFirst": "ATLAS prepara primero un borrador. Nada se envía hasta que apruebes.",
+    "toastApproved": "Acción aprobada",
+    "toastExecuted": "Acción ejecutada (demo)",
+    "toastDismissed": "Acción descartada",
+    "toastDrafted": "Borrador agregado al Centro de Acciones",
+    "filterAll": "Todas",
+    "filterDraft": "Borradores",
+    "filterApproved": "Aprobadas",
+    "filterExecuted": "Hechas",
+    "filterDismissed": "Descartadas",
+    "pendingCount": "{count} borradores te esperan"
+  },
+  "ask": {
+    "title": "Pregúntale a ATLAS",
+    "subtitle": "Pregunta sobre dinero, clientes, personal o qué hacer enseguida.",
+    "placeholder": "p. ej. ¿Cuánto gané hoy?",
+    "voicePlaceholder": "Entrada de voz (próximamente)",
+    "advisorLanguage": "Idioma del asesor IA",
+    "answer": "Respuesta",
+    "evidence": "Según tus datos",
+    "risk": "Riesgo a vigilar",
+    "nextSteps": "Siguiente paso sugerido",
+    "actionsLabel": "Tomar acción",
+    "suggested": "Prueba a preguntar",
+    "thinking": "ATLAS está pensando…",
+    "usedTools": "Herramientas usadas",
+    "missingData": "Datos faltantes",
+    "clearChat": "Borrar chat",
+    "you": "Tú",
+    "samples": {
+      "revenue": "¿Cuánto gané hoy?",
+      "profitDrop": "¿Por qué bajó la utilidad este mes?",
+      "payroll": "¿Puedo pagar la nómina la próxima semana?",
+      "churn": "¿Qué clientes están por irse?",
+      "draft": "Escribe un recordatorio de pago",
+      "staffing": "¿Cuántas personas programo mañana?"
+    }
+  },
+  "ledger": {
+    "title": "Libro",
+    "subtitle": "Cada peso que entra y sale, organizado.",
+    "income": "Ingresos",
+    "expense": "Gastos",
+    "receivables": "Por cobrar",
+    "payables": "Por pagar",
+    "addTransaction": "Registrar",
+    "newTransaction": "Nuevo movimiento",
+    "type": "Tipo",
+    "paymentMethod": "Método de pago",
+    "forecastCta": "Ver pronóstico de caja",
+    "noTransactions": "Aún no hay movimientos. Agrega el primero.",
+    "due": "Vence {date}",
+    "markPaid": "Marcar pagado",
+    "method": {
+      "cash": "Efectivo",
+      "card": "Tarjeta",
+      "bank": "Transferencia",
+      "wallet": "Billetera",
+      "other": "Otro"
+    },
+    "status": {
+      "open": "Abierto",
+      "overdue": "Vencido",
+      "paid": "Pagado"
+    },
+    "incomeCategory": {
+      "sales": "Ventas",
+      "service": "Ingresos por servicio",
+      "prepayment": "Anticipo",
+      "other_income": "Otros ingresos"
+    },
+    "expenseCategory": {
+      "raw_materials": "Materia prima",
+      "rent": "Renta",
+      "payroll": "Nómina",
+      "utilities": "Servicios",
+      "logistics": "Logística",
+      "marketing": "Marketing",
+      "platform_commission": "Comisión de plataforma",
+      "tax": "Impuestos",
+      "other_expense": "Otros gastos"
+    },
+    "toastAdded": "Movimiento agregado"
+  },
+  "capture": {
+    "title": "Captura de recibos",
+    "subtitle": "Toma una foto. ATLAS lo lee por ti.",
+    "uploadHint": "Toca para tomar foto o subir un recibo",
+    "scanning": "Leyendo recibo…",
+    "result": "Datos reconocidos",
+    "merchant": "Comercio",
+    "tax": "Impuesto",
+    "confidence": "Confianza",
+    "lowConfidenceWarning": "Verifica los campos resaltados antes de guardar.",
+    "fieldLowConfidence": "Confianza baja: verifica",
+    "confirmSave": "Confirmar y guardar en el libro",
+    "demoCta": "Probar escaneo demo",
+    "toastSaved": "Recibo guardado en el libro"
+  },
+  "cashflow": {
+    "title": "Pronóstico de caja",
+    "subtitle": "Ve el problema antes de que llegue.",
+    "next7": "Próximos 7 días",
+    "next30": "Próximos 30 días",
+    "riskDate": "Fecha de riesgo",
+    "lowestCash": "Caja mínima proyectada",
+    "projectedCash": "Caja proyectada",
+    "safetyLine": "Línea de seguridad",
+    "impactReceivables": "Impacto por cobrar",
+    "impactPayables": "Impacto por pagar",
+    "impactPayroll": "Impacto de nómina",
+    "suggestedAction": "Acción sugerida",
+    "actionCollect": "Redactar cobro",
+    "actionDelay": "Redactar solicitud de aplazamiento",
+    "chartCash": "Caja",
+    "chartDay": "Día",
+    "status": {
+      "safe": "Seguro",
+      "watch": "Vigilar",
+      "danger": "Peligro"
+    }
+  },
+  "team": {
+    "title": "Equipo",
+    "subtitle": "Tu gente, sus turnos y tareas.",
+    "clockStatus": "Asistencia de hoy",
+    "geofence": "Consentimiento de geocerca",
+    "scheduleCta": "Abrir horarios",
+    "privacyNotice": "La ubicación del empleado y la asistencia por geocerca requieren su consentimiento explícito.",
+    "consentGiven": "Consentimiento dado",
+    "consentMissing": "Se requiere consentimiento",
+    "consentOwnerNote": "Solo el empleado puede otorgar o revocar este consentimiento.",
+    "clockedIn": "Registrado",
+    "notClockedIn": "Sin registrar",
+    "privateRedacted": "Los datos de contacto privados están ocultos para tu rol.",
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo"
+    }
+  },
+  "schedule": {
+    "title": "Armado de horarios",
+    "subtitle": "Cubre cada turno sin gastar de más.",
+    "generateCta": "Generar horario con IA",
+    "notifyCta": "Notificar al equipo",
+    "understaffed": "Falta personal",
+    "conflict": "Conflicto",
+    "ok": "Cubierto",
+    "estimatedCost": "Costo laboral semanal estimado",
+    "conflictsFound": "{count} conflictos detectados",
+    "toastGenerated": "Borrador de horario IA creado en el Centro de Acciones",
+    "toastNotified": "Equipo notificado (demo)",
+    "days": {
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mié",
+      "thu": "Jue",
+      "fri": "Vie",
+      "sat": "Sáb",
+      "sun": "Dom"
+    }
+  },
+  "customers": {
+    "title": "Clientes",
+    "subtitle": "Conoce quién es leal y quién se va.",
+    "totalSpend": "Gasto total",
+    "visits": "Visitas",
+    "lastVisit": "Última visita",
+    "winbackCta": "Redactar mensaje de recuperación",
+    "winbackTitle": "Mensaje de recuperación",
+    "winbackConfirm": "Añadir al Centro de acciones",
+    "atRiskCount": "{count} clientes necesitan atención",
+    "segment": {
+      "high_value": "Alto valor",
+      "new": "Nuevo",
+      "at_risk": "En riesgo",
+      "price_sensitive": "Sensible al precio",
+      "dormant": "Inactivo"
+    }
+  },
+  "reports": {
+    "title": "Reporte mensual",
+    "subtitle": "El diagnóstico de tu negocio en lenguaje claro.",
+    "generateCta": "Generar el reporte del mes",
+    "exportPdf": "Exportar PDF",
+    "headline": "Resumen en una línea",
+    "headlineBody": "Los ingresos se mantuvieron mientras los costos subieron; protege tu margen y cobra lo vencido.",
+    "keyMetrics": "Métricas clave",
+    "goodNews": "Tres cosas buenas",
+    "good1": "Las ventas de fin de semana son tu canal más fuerte y sigue creciendo.",
+    "good2": "Los clientes de alto valor regresan y elevan el ticket promedio.",
+    "good3": "La captura de recibos mantiene tus libros al día con poco esfuerzo.",
+    "alerts": "Dos alertas",
+    "alert1": "Las cuentas por cobrar vencidas inmovilizan efectivo que podrías usar.",
+    "alert2": "El costo de materia prima supera el referente de tus pares.",
+    "profitChange": "Por qué cambió la utilidad",
+    "profitChangeBody": "La utilidad cambió porque el costo de materia prima subió más rápido que los ingresos este mes.",
+    "cashflowRisk": "Riesgo de caja",
+    "cashflowRiskBody": "Aparece una ventana apretada la próxima semana cuando coinciden pagos a proveedores y nómina.",
+    "teamSummary": "Resumen del equipo",
+    "teamSummaryBody": "El personal cubrió la demanda entre semana; los fines de semana faltó gente a veces.",
+    "customerSummary": "Resumen de clientes",
+    "customerSummaryBody": "Pocos clientes leales generan la mayoría de los ingresos; vale la pena recuperar una cuenta inactiva.",
+    "mostImportant": "Lo único para el próximo mes",
+    "mostImportantBody": "Cobra lo vencido y renegocia el precio de la materia prima.",
+    "recommendedActions": "Acciones recomendadas",
+    "advisorLanguageNote": "El idioma del reporte sigue al de tu asesor IA: {language}",
+    "toastExport": "Exportar PDF próximamente"
+  },
+  "network": {
+    "title": "Red de pares",
+    "subtitle": "Compárate con negocios similares, de forma anónima.",
+    "grossMarginRange": "Rango de margen bruto del sector",
+    "yourMargin": "Tu margen",
+    "costStructure": "Comparación de estructura de costos",
+    "you": "Tú",
+    "peers": "Pares",
+    "groupBuying": "Interés en compra grupal",
+    "supplierRecs": "Recomendaciones de proveedores",
+    "industryAlerts": "Alertas del sector",
+    "anonymityNotice": "Todos los datos de pares están agregados y anonimizados. Ningún negocio puede identificarse.",
+    "sampleSize": "Con base en {count} negocios similares",
+    "kAnonymityBlocked": "Aún no hay suficientes negocios similares para mostrarlo de forma anónima (se necesitan al menos {min}).",
+    "participants": "{count} interesados",
+    "joinGroupBuy": "Expresar interés"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Idiomas, formatos, privacidad y cumplimiento.",
+    "localization": "Idioma y formato",
+    "interfaceLanguage": "Idioma de la interfaz",
+    "aiAdvisorLanguage": "Idioma del asesor IA",
+    "country": "País / región",
+    "currency": "Moneda",
+    "numberFormat": "Formato de número",
+    "dateFormat": "Formato de fecha",
+    "formatPreview": "Vista previa",
+    "previewCurrency": "Moneda",
+    "previewNumber": "Número",
+    "previewDate": "Fecha",
+    "previewPercent": "Porcentaje",
+    "privacy": "Privacidad del empleado",
+    "permissions": "Permisos",
+    "roleSimulator": "Simulador de roles",
+    "roleSimulatorHint": "Previsualiza ATLAS con otro rol. Cambia lo que puedes ver y hacer.",
+    "dataExport": "Exportar datos",
+    "compliance": "Cumplimiento",
+    "demoMode": "Modo demo",
+    "demoModeHint": "Cuando está activo, las fechas se anclan para mantener consistentes los datos de muestra.",
+    "resetDemo": "Reiniciar datos demo",
+    "toastReset": "Datos demo reiniciados",
+    "exportCta": "Exportar datos (JSON)",
+    "toastExport": "Exportación de datos descargada (demo)",
+    "safetyBuffer": "Línea de seguridad de caja",
+    "languageIndependentNote": "El idioma de la interfaz y el del asesor IA son independientes. Por ejemplo: navega en español mientras ATLAS escribe reportes en inglés."
+  },
+  "roles": {
+    "owner": "Dueño",
+    "manager": "Gerente",
+    "accountant": "Contador",
+    "employee": "Empleado",
+    "viewer": "Lector"
+  },
+  "compliance": {
+    "disclaimer": "ATLAS ofrece información de apoyo al negocio y no reemplaza a un contador certificado, abogado, asesor fiscal o asesor financiero con licencia."
+  },
+  "pricing": {
+    "title": "Planes",
+    "free": "Gratis",
+    "pro": "Pro",
+    "business": "Negocios",
+    "currentPlan": "Plan actual",
+    "upgrade": "Mejorar",
+    "freeDesc": "Flujo de caja diario, libro y respuestas IA para un solo dueño.",
+    "proDesc": "Centro de Acciones, recibos, horarios y reportes mensuales para un equipo pequeño.",
+    "businessDesc": "Permisos por rol, red de pares y exportación de datos para equipos en crecimiento."
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "positiveAmount": "El monto debe ser mayor que cero",
+    "invalidNumber": "Ingresa un número válido"
+  },
+  "empty": {
+    "generic": "Aún no hay nada aquí."
+  },
+  "country": {
+    "CN": "China",
+    "TW": "Taiwán",
+    "US": "Estados Unidos",
+    "JP": "Japón",
+    "KR": "Corea del Sur",
+    "MX": "México",
+    "BR": "Brasil",
+    "IN": "India",
+    "ID": "Indonesia",
+    "TH": "Tailandia",
+    "VN": "Vietnam",
+    "AE": "Emiratos Árabes Unidos",
+    "SA": "Arabia Saudita",
+    "GB": "Reino Unido",
+    "SG": "Singapur"
+  },
+  "ai": {
+    "answer": {
+      "finance": "Hoy ingresaste {revenue} y gastaste {expenses}, así que te quedaste con unos {profit}.",
+      "cashflowSafe": "Puedes cubrir el periodo. Tu caja mínima proyectada es {lowest}, por encima de tu línea de seguridad de {safety}.",
+      "cashflowRisk": "La caja se aprieta pronto. Tu caja proyectada baja a {lowest}, debajo de tu línea de seguridad de {safety}.",
+      "customers": "{count} clientes parecen en riesgo de irse y vale la pena contactarlos.",
+      "staffing": "{present} de {total} ya registraron entrada. Para mañana, unas {suggested} personas en turno luce adecuado.",
+      "draft": "Redacté un mensaje para que lo revises antes de enviar nada.",
+      "report": "Puedo armarte un reporte mensual en lenguaje claro.",
+      "peer": "Así te comparas con negocios similares, de forma anónima.",
+      "compliance": "Esta es una guía general; confirma los detalles con un profesional calificado.",
+      "unknown": "Aún no estoy seguro. Pregunta por ingresos, caja, clientes o personal."
+    },
+    "ev": {
+      "todayRevenue": "Ingresos de hoy: {amount}",
+      "todayExpenses": "Gastos de hoy: {amount}",
+      "monthRevenue": "Ingresos hasta ahora: {amount}",
+      "safetyLine": "Línea de seguridad: {amount}",
+      "lowestCash": "Caja mínima proyectada: {amount}",
+      "openReceivables": "{count} cuentas por cobrar abiertas por {amount}",
+      "customerVisits": "{name}: {visits} visitas",
+      "clockedIn": "{name} registró entrada",
+      "notClockedIn": "{name} no registró entrada",
+      "draftFirst": "Nada se envía hasta que apruebes el borrador.",
+      "reportScope": "Cubre ingresos, costos, caja, equipo y clientes.",
+      "anonymity": "Todas las comparaciones están agregadas y anonimizadas."
+    },
+    "risk": {
+      "negativeProfit": "Hoy gastaste más de lo que ganaste.",
+      "cashflowDanger": "La caja podría caer debajo de la línea de seguridad dentro del pronóstico.",
+      "churn": "Algunos clientes leales no han regresado últimamente."
+    },
+    "next": {
+      "reviewMonth": "Compara los costos de este mes con el anterior.",
+      "collect": "Cobra primero lo vencido: libera más efectivo.",
+      "winback": "Envía un mensaje amable de recuperación a tus clientes en riesgo.",
+      "schedule": "Ajusta el horario de mañana a la demanda esperada.",
+      "generateReport": "Genera el reporte mensual para el panorama completo."
+    },
+    "tools": {
+      "getRevenueSummary": "Resumir ingresos por periodo.",
+      "getExpenseSummary": "Resumir gastos por categoría.",
+      "getCashflowForecast": "Proyectar la caja de los próximos días.",
+      "getReceivables": "Listar cuentas por cobrar, opcionalmente por estado.",
+      "getPayables": "Listar cuentas por pagar, opcionalmente por estado.",
+      "getTopProducts": "Ordenar productos por ingreso o volumen.",
+      "getEmployeeAttendance": "Ver quién registró entrada hoy.",
+      "getCustomerRiskSegments": "Agrupar clientes por riesgo de fuga.",
+      "draftMessage": "Redactar un mensaje para que el dueño lo revise.",
+      "createTask": "Crear una tarea o recordatorio.",
+      "logAiRecommendation": "Registrar una recomendación de IA en la auditoría."
+    }
+  },
+  "mock": {
+    "tx": {
+      "lunchService": "Servicio de comida",
+      "takeaway": "Pedidos para llevar",
+      "cateringDeposit": "Anticipo de banquete",
+      "freshProduce": "Producto fresco",
+      "gasRefill": "Recarga de gas",
+      "deliveryFee": "Comisión de plataforma de entrega",
+      "dailySales": "Ventas del día",
+      "supplierDelivery": "Entrega de proveedor",
+      "weekendSales": "Ventas de fin de semana",
+      "monthlyRent": "Renta mensual"
+    },
+    "receivable": {
+      "companyCatering": "Pedido de banquete corporativo",
+      "eventBalance": "Saldo de evento por cobrar"
+    },
+    "payable": {
+      "meatSupplier": "Factura del proveedor de carne",
+      "vegWholesaler": "Factura del mayorista de verduras",
+      "payroll": "Nómina del personal"
+    },
+    "vendor": {
+      "meatSupplier": "Carnes Prime",
+      "vegWholesaler": "Mayoreo GreenLeaf",
+      "payroll": "Nómina"
+    },
+    "customer": {
+      "hongtuTech": "Hongtu Tech",
+      "mrWang": "Sr. Wang",
+      "lilyChen": "Lily Chen",
+      "zhangFamily": "Familia Zhang",
+      "oldTownOffice": "Parque de Oficinas Centro"
+    },
+    "employee": {
+      "chefLiu": "Chef Liu",
+      "mei": "Mei",
+      "jun": "Jun",
+      "auntZhao": "Tía Zhao",
+      "kevin": "Kevin"
+    },
+    "product": {
+      "beefNoodles": "Fideos con res",
+      "dumplings": "Empanaditas",
+      "coldDrinks": "Bebidas frías"
+    },
+    "action": {
+      "collectPayment": {
+        "title": "Cobrar {count} cuentas vencidas",
+        "reason": "{amount} está vencido e inmoviliza efectivo que podrías usar.",
+        "draft": "Hola, solo un recordatorio amable de que una factura por {amount} está vencida. ¿Nos podrías indicar cuándo llegará el pago? ¡Gracias!",
+        "ev1": "1 cuenta por cobrar pasó su fecha de vencimiento.",
+        "ev2": "Cobrarla libera {amount} de capital de trabajo."
+      },
+      "winback": {
+        "title": "Recuperar a un cliente que se fue",
+        "reason": "Un cliente de {visits} visitas no regresa hace {days} días.",
+        "draft": "¡Hola! Te hemos extrañado. Vuelve esta semana y disfruta un detalle por nuestra cuenta; nos encantaría verte de nuevo.",
+        "ev1": "La última visita fue hace {days} días."
+      },
+      "delayPayment": {
+        "title": "Pedir una prórroga corta al proveedor",
+        "reason": "Aplazar {amount} por {days} días suaviza un día apretado.",
+        "draft": "Hola, valoramos nuestra relación. ¿Podríamos extender este pago de {amount} por {days} días? Confirmaremos la nueva fecha por escrito.",
+        "ev1": "Un pago de {amount} cae en un día de caja apretada."
+      }
+    },
+    "insight": {
+      "tightCash": {
+        "title": "La caja se aprieta la próxima semana",
+        "summary": "Pagos a proveedores y nómina coinciden con cuentas vencidas.",
+        "ev1": "Las cuentas vencidas suman {amount}.",
+        "ev2": "Una cuenta por pagar vence la misma semana.",
+        "ev3": "La nómina está programada dentro de la ventana."
+      }
+    },
+    "network": {
+      "groupBuy": {
+        "oil": "Compra de aceite a granel",
+        "coldChain": "Entrega refrigerada compartida"
+      }
+    }
+  }
+}

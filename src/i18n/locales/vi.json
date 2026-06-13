@@ -1,0 +1,593 @@
+{
+  "app": {
+    "name": "ATLAS",
+    "tagline": "Hệ điều hành kinh doanh AI cho doanh nghiệp nhỏ toàn cầu"
+  },
+  "common": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "close": "Đóng",
+    "add": "Thêm",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "dismiss": "Bỏ qua",
+    "approve": "Phê duyệt",
+    "execute": "Thực hiện",
+    "back": "Quay lại",
+    "next": "Tiếp",
+    "finish": "Hoàn tất",
+    "loading": "Đang tải…",
+    "all": "Tất cả",
+    "search": "Tìm kiếm",
+    "today": "Hôm nay",
+    "amount": "Số tiền",
+    "date": "Ngày",
+    "category": "Danh mục",
+    "status": "Trạng thái",
+    "description": "Mô tả",
+    "notes": "Ghi chú",
+    "name": "Tên",
+    "role": "Vai trò",
+    "phone": "Điện thoại",
+    "email": "Email",
+    "draft": "Bản nháp",
+    "send": "Gửi",
+    "generate": "Tạo",
+    "viewAll": "Xem tất cả",
+    "comingSoon": "Sắp ra mắt",
+    "mock": "Demo",
+    "high": "Cao",
+    "medium": "Trung bình",
+    "low": "Thấp",
+    "yes": "Có",
+    "no": "Không",
+    "optional": "Tùy chọn",
+    "hidden": "Đã ẩn",
+    "restricted": "Bị hạn chế",
+    "download": "Tải xuống"
+  },
+  "nav": {
+    "today": "Hôm nay",
+    "ask": "Hỏi ATLAS",
+    "ledger": "Sổ sách",
+    "capture": "Hóa đơn",
+    "cashflow": "Dòng tiền",
+    "actions": "Trung tâm hành động",
+    "team": "Đội ngũ",
+    "schedule": "Lịch làm việc",
+    "customers": "Khách hàng",
+    "reports": "Báo cáo",
+    "network": "Mạng lưới ngành",
+    "settings": "Cài đặt"
+  },
+  "demo": {
+    "banner": "Dữ liệu demo lấy mốc ngày {date}. Mục nhập mới dùng thời gian thực hiện tại."
+  },
+  "onboarding": {
+    "title": "Chào mừng đến với ATLAS",
+    "subtitle": "Thiết lập trong 1 phút. ATLAS bắt đầu làm việc cho bạn ngay hôm nay.",
+    "stepBusinessType": "Bạn kinh doanh loại hình nào?",
+    "stepBusinessName": "Cửa hàng của bạn tên gì?",
+    "businessNamePlaceholder": "VD: Quán Mì Sunrise",
+    "stepCountry": "Doanh nghiệp của bạn ở đâu?",
+    "stepCurrency": "Bạn dùng tiền tệ nào?",
+    "stepUiLanguage": "Ngôn ngữ giao diện",
+    "stepAiLanguage": "Ngôn ngữ cố vấn AI",
+    "stepEmployees": "Có bao nhiêu người cùng làm?",
+    "useDemoData": "Bắt đầu với dữ liệu demo để xem thử",
+    "useDemoDataHint": "Bạn có thể xóa bất cứ lúc nào trong Cài đặt.",
+    "type": {
+      "restaurant": "Ăn uống",
+      "retail": "Bán lẻ & cửa hàng",
+      "beauty": "Làm đẹp & salon",
+      "education": "Giáo dục & đào tạo",
+      "local_service": "Dịch vụ địa phương",
+      "freelance": "Nhóm tự do",
+      "other": "Khác"
+    },
+    "employeeRange": {
+      "1-5": "1–5 người",
+      "6-15": "6–15 người",
+      "16-30": "16–30 người",
+      "31-50": "31–50 người",
+      "50+": "Trên 50 người"
+    },
+    "finishCta": "Bắt đầu dùng ATLAS",
+    "step": "Bước {current} trên {total}"
+  },
+  "dashboard": {
+    "title": "Hôm nay",
+    "greeting": "Tổng quan kinh doanh của {name}",
+    "aiJudgment": "Nhận định của ATLAS hôm nay",
+    "judgmentSafe": "Hôm nay bạn thu {revenue}, chi {expenses}, còn lại {profit} lợi nhuận. Dòng tiền 7 ngày tới an toàn. Hãy giữ đà này.",
+    "judgmentWatch": "Hôm nay bạn thu {revenue}, chi {expenses}, còn lại {profit} lợi nhuận. Sẽ có ngày eo hẹp trong 7 ngày tới. Xem các hành động ưu tiên bên dưới.",
+    "judgmentDanger": "Hôm nay bạn thu {revenue}, chi {expenses}, còn lại {profit} lợi nhuận. Tiền mặt có thể xuống dưới mức an toàn {safety}. Hãy hành động ngay.",
+    "todayRevenue": "Doanh thu hôm nay",
+    "todayExpenses": "Chi phí hôm nay",
+    "estimatedGrossProfit": "Lợi nhuận gộp ước tính",
+    "availableCash": "Tiền mặt khả dụng",
+    "cashflowRisk": "Rủi ro dòng tiền 7 ngày",
+    "vsYesterday": "So với hôm qua",
+    "topActions": "3 hành động quan trọng hôm nay",
+    "askPlaceholder": "Hỏi ATLAS về việc kinh doanh của bạn…",
+    "voiceHint": "Nói để nhập",
+    "quickActions": "Thao tác nhanh",
+    "quickAddTransaction": "Ghi sổ",
+    "quickCapture": "Quét hóa đơn",
+    "quickCollect": "Đòi nợ",
+    "quickSchedule": "Xếp lịch",
+    "meaningProfit": "Số tiền thực sự còn lại hôm nay sau khi trừ chi phí.",
+    "meaningCash": "Số tiền bạn có thể dùng ngay bây giờ.",
+    "riskSafe": "Dòng tiền 7 ngày tới có vẻ an toàn.",
+    "riskWatch": "Hãy cẩn thận. Sắp có ngày eo hẹp.",
+    "riskDanger": "Cần hành động. Tiền mặt có thể xuống dưới mức an toàn.",
+    "summaryOnly": "Chỉ hiển thị bản tóm tắt giới hạn theo vai trò của bạn."
+  },
+  "action": {
+    "reason": "Lý do",
+    "impact": "Tác động dự kiến",
+    "confidence": "Độ tin cậy",
+    "amountInvolved": "Số tiền liên quan",
+    "draft": "Bản nháp",
+    "approved": "Đã duyệt",
+    "executed": "Đã thực hiện",
+    "dismissed": "Đã bỏ qua",
+    "draftReady": "Bản nháp sẵn sàng để xem",
+    "evidence": "Bằng chứng",
+    "executeConfirmTitle": "Thực hiện hành động này?",
+    "executeConfirmBody": "ATLAS sẽ ghi lại hành động này và lưu vào nhật ký kiểm toán. Trong bản demo này, sẽ không gửi gì thực sự.",
+    "type": {
+      "collect_payment": "Đòi nợ",
+      "delay_payment": "Hoãn trả nhà cung cấp",
+      "customer_winback": "Kéo khách quay lại",
+      "review_reply": "Trả lời đánh giá",
+      "schedule_adjustment": "Điều chỉnh lịch",
+      "supplier_negotiation": "Đàm phán nhà cung cấp",
+      "inventory_reminder": "Bổ sung kho",
+      "monthly_review": "Đánh giá hằng tháng"
+    }
+  },
+  "actions": {
+    "title": "Trung tâm hành động",
+    "subtitle": "ATLAS soạn nháp, bạn phê duyệt, bạn luôn nắm quyền.",
+    "empty": "Không có hành động nào chờ xử lý. Mọi thứ đã xong.",
+    "draftFirst": "ATLAS chuẩn bị bản nháp trước. Không gì được gửi cho đến khi bạn phê duyệt.",
+    "toastApproved": "Đã phê duyệt hành động",
+    "toastExecuted": "Đã thực hiện (demo)",
+    "toastDismissed": "Đã bỏ qua hành động",
+    "toastDrafted": "Đã thêm bản nháp vào Trung tâm hành động",
+    "filterAll": "Tất cả",
+    "filterDraft": "Bản nháp",
+    "filterApproved": "Đã duyệt",
+    "filterExecuted": "Đã thực hiện",
+    "filterDismissed": "Đã bỏ qua",
+    "pendingCount": "{count} bản nháp đang chờ"
+  },
+  "ask": {
+    "title": "Hỏi ATLAS",
+    "subtitle": "Hỏi về tiền, khách hàng, nhân viên và việc nên làm tiếp theo.",
+    "placeholder": "VD: Hôm nay tôi kiếm được bao nhiêu?",
+    "voicePlaceholder": "Nói để nhập (sắp ra mắt)",
+    "advisorLanguage": "Ngôn ngữ cố vấn AI",
+    "answer": "Trả lời",
+    "evidence": "Dựa trên dữ liệu",
+    "risk": "Rủi ro cần lưu ý",
+    "nextSteps": "Bước tiếp theo được đề xuất",
+    "actionsLabel": "Hành động",
+    "suggested": "Thử hỏi",
+    "thinking": "ATLAS đang suy nghĩ…",
+    "usedTools": "Công cụ đã dùng",
+    "missingData": "Dữ liệu còn thiếu",
+    "clearChat": "Xóa hội thoại",
+    "you": "Bạn",
+    "samples": {
+      "revenue": "Hôm nay tôi kiếm được bao nhiêu?",
+      "profitDrop": "Vì sao lợi nhuận tháng này giảm?",
+      "payroll": "Tuần sau tôi có đủ trả lương không?",
+      "churn": "Khách hàng nào sắp rời đi?",
+      "draft": "Soạn giúp tôi tin nhắn đòi nợ",
+      "staffing": "Mai nên xếp bao nhiêu nhân viên?"
+    }
+  },
+  "ledger": {
+    "title": "Sổ sách",
+    "subtitle": "Mọi đồng tiền ra vào, gọn gàng.",
+    "income": "Thu",
+    "expense": "Chi",
+    "receivables": "Phải thu",
+    "payables": "Phải trả",
+    "addTransaction": "Ghi sổ",
+    "newTransaction": "Mục mới",
+    "type": "Loại",
+    "paymentMethod": "Phương thức thanh toán",
+    "forecastCta": "Xem dự báo dòng tiền",
+    "noTransactions": "Chưa có mục nào. Hãy thêm mục đầu tiên.",
+    "due": "Đến hạn: {date}",
+    "markPaid": "Đánh dấu đã trả",
+    "method": {
+      "cash": "Tiền mặt",
+      "card": "Thẻ",
+      "bank": "Chuyển khoản",
+      "wallet": "Ví điện tử",
+      "other": "Khác"
+    },
+    "status": {
+      "open": "Đang mở",
+      "overdue": "Quá hạn",
+      "paid": "Đã trả"
+    },
+    "incomeCategory": {
+      "sales": "Bán hàng",
+      "service": "Thu dịch vụ",
+      "prepayment": "Tiền cọc",
+      "other_income": "Thu khác"
+    },
+    "expenseCategory": {
+      "raw_materials": "Nguyên liệu",
+      "rent": "Tiền thuê",
+      "payroll": "Lương",
+      "utilities": "Tiện ích",
+      "logistics": "Vận chuyển",
+      "marketing": "Tiếp thị",
+      "platform_commission": "Hoa hồng nền tảng",
+      "tax": "Thuế",
+      "other_expense": "Chi khác"
+    },
+    "toastAdded": "Đã thêm mục"
+  },
+  "capture": {
+    "title": "Quét hóa đơn",
+    "subtitle": "Chụp ảnh, ATLAS đọc giúp bạn.",
+    "uploadHint": "Chạm để chụp hoặc tải hóa đơn lên",
+    "scanning": "Đang đọc hóa đơn…",
+    "result": "Kết quả đọc",
+    "merchant": "Người bán",
+    "tax": "Thuế",
+    "confidence": "Độ tin cậy",
+    "lowConfidenceWarning": "Kiểm tra các mục được tô sáng trước khi lưu.",
+    "fieldLowConfidence": "Độ tin cậy thấp — cần kiểm tra",
+    "confirmSave": "Xác nhận và lưu vào sổ",
+    "demoCta": "Chạy quét demo",
+    "toastSaved": "Đã lưu hóa đơn vào sổ"
+  },
+  "cashflow": {
+    "title": "Dự báo dòng tiền",
+    "subtitle": "Thấy vấn đề trước khi nó xảy ra.",
+    "next7": "7 ngày tới",
+    "next30": "30 ngày tới",
+    "riskDate": "Ngày rủi ro",
+    "lowestCash": "Tiền mặt thấp nhất dự kiến",
+    "projectedCash": "Tiền mặt dự kiến",
+    "safetyLine": "Mức an toàn",
+    "impactReceivables": "Tác động phải thu",
+    "impactPayables": "Tác động phải trả",
+    "impactPayroll": "Tác động lương",
+    "suggestedAction": "Hành động đề xuất",
+    "actionCollect": "Soạn tin đòi nợ",
+    "actionDelay": "Soạn yêu cầu hoãn",
+    "chartCash": "Tiền mặt",
+    "chartDay": "Ngày",
+    "status": {
+      "safe": "An toàn",
+      "watch": "Theo dõi",
+      "danger": "Nguy hiểm"
+    }
+  },
+  "team": {
+    "title": "Đội ngũ",
+    "subtitle": "Nhân viên, ca làm và công việc.",
+    "clockStatus": "Chấm công hôm nay",
+    "geofence": "Đồng ý vị trí",
+    "scheduleCta": "Mở lịch làm việc",
+    "privacyNotice": "Theo dõi vị trí và chấm công theo định vị cần có sự đồng ý rõ ràng của nhân viên.",
+    "consentGiven": "Đã đồng ý",
+    "consentMissing": "Cần đồng ý",
+    "consentOwnerNote": "Sự đồng ý này chỉ nhân viên mới có thể cấp hoặc thu hồi.",
+    "clockedIn": "Đã chấm công",
+    "notClockedIn": "Chưa chấm công",
+    "privateRedacted": "Thông tin liên hệ cá nhân bị ẩn với vai trò của bạn.",
+    "status": {
+      "active": "Đang làm",
+      "inactive": "Ngừng"
+    }
+  },
+  "schedule": {
+    "title": "Xếp lịch làm việc",
+    "subtitle": "Lấp đủ mọi ca mà không chi vượt mức.",
+    "generateCta": "Tạo lịch bằng AI",
+    "notifyCta": "Thông báo nhân viên",
+    "understaffed": "Thiếu người",
+    "conflict": "Trùng lịch",
+    "ok": "Đủ",
+    "estimatedCost": "Chi phí nhân công tuần ước tính",
+    "conflictsFound": "Phát hiện {count} trùng lịch",
+    "toastGenerated": "Đã tạo bản nháp lịch AI trong Trung tâm hành động",
+    "toastNotified": "Đã thông báo nhân viên (demo)",
+    "days": {
+      "mon": "T2",
+      "tue": "T3",
+      "wed": "T4",
+      "thu": "T5",
+      "fri": "T6",
+      "sat": "T7",
+      "sun": "CN"
+    }
+  },
+  "customers": {
+    "title": "Khách hàng",
+    "subtitle": "Biết ai trung thành và ai sắp rời đi.",
+    "totalSpend": "Tổng chi tiêu",
+    "visits": "Lượt ghé",
+    "lastVisit": "Lần ghé cuối",
+    "winbackCta": "Soạn tin kéo về",
+    "winbackTitle": "Tin nhắn kéo về",
+    "winbackConfirm": "Thêm vào Trung tâm hành động",
+    "atRiskCount": "{count} khách hàng cần chú ý",
+    "segment": {
+      "high_value": "Giá trị cao",
+      "new": "Mới",
+      "at_risk": "Có nguy cơ rời",
+      "price_sensitive": "Nhạy giá",
+      "dormant": "Ngừng hoạt động"
+    }
+  },
+  "reports": {
+    "title": "Báo cáo hằng tháng",
+    "subtitle": "Chẩn đoán kinh doanh bằng ngôn ngữ đơn giản.",
+    "generateCta": "Tạo báo cáo tháng này",
+    "exportPdf": "Xuất PDF",
+    "headline": "Tóm tắt một dòng",
+    "headlineBody": "Tháng này doanh thu ổn định nhưng chi phí tăng. Hãy giữ biên lợi nhuận và thu hồi các khoản phải thu quá hạn.",
+    "keyMetrics": "Chỉ số chính",
+    "goodNews": "Ba tin vui",
+    "good1": "Doanh thu cuối tuần là kênh mạnh nhất và vẫn đang tăng trưởng.",
+    "good2": "Khách hàng giá trị cao quay lại nhiều, nâng giá trị mỗi hóa đơn.",
+    "good3": "Quét hóa đơn giúp sổ sách luôn cập nhật mà gần như không tốn công.",
+    "alerts": "Hai cảnh báo",
+    "alert1": "Các khoản phải thu quá hạn đang giữ chặt tiền mặt bạn có thể dùng ngay.",
+    "alert2": "Chi phí nguyên liệu cao hơn mức trung bình ngành.",
+    "profitChange": "Vì sao lợi nhuận thay đổi",
+    "profitChangeBody": "Tháng này chi phí nguyên liệu tăng nhanh hơn doanh thu, khiến lợi nhuận thay đổi.",
+    "cashflowRisk": "Rủi ro dòng tiền",
+    "cashflowRiskBody": "Tuần tới thanh toán nhà cung cấp và lương trùng nhau, tạo ra giai đoạn eo hẹp.",
+    "teamSummary": "Tóm tắt đội ngũ",
+    "teamSummaryBody": "Ngày trong tuần được xếp đúng nhu cầu; cuối tuần đôi khi thiếu người.",
+    "customerSummary": "Tóm tắt khách hàng",
+    "customerSummaryBody": "Một số ít khách trung thành tạo ra phần lớn doanh thu. Một khách đã im ắng và đáng để kéo về.",
+    "mostImportant": "Điều quan trọng nhất tháng tới",
+    "mostImportantBody": "Thu hồi các khoản phải thu quá hạn và đàm phán lại giá nguyên liệu.",
+    "recommendedActions": "Hành động đề xuất",
+    "advisorLanguageNote": "Ngôn ngữ báo cáo theo ngôn ngữ cố vấn AI: {language}",
+    "toastExport": "Tính năng xuất PDF sắp ra mắt"
+  },
+  "network": {
+    "title": "Mạng lưới ngành",
+    "subtitle": "So sánh ẩn danh với doanh nghiệp tương tự.",
+    "grossMarginRange": "Biên lợi nhuận gộp của ngành",
+    "yourMargin": "Biên của bạn",
+    "costStructure": "So sánh cơ cấu chi phí",
+    "you": "Bạn",
+    "peers": "Đồng nghiệp",
+    "groupBuying": "Quan tâm mua chung",
+    "supplierRecs": "Nhà cung cấp gợi ý",
+    "industryAlerts": "Cảnh báo ngành",
+    "anonymityNotice": "Tất cả dữ liệu ngành được tổng hợp và ẩn danh, không thể nhận diện bất kỳ doanh nghiệp nào.",
+    "sampleSize": "Dựa trên {count} doanh nghiệp tương tự",
+    "kAnonymityBlocked": "Không đủ doanh nghiệp tương tự để hiển thị ẩn danh (cần tối thiểu {min}).",
+    "participants": "{count} đang quan tâm",
+    "joinGroupBuy": "Bày tỏ quan tâm"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "subtitle": "Ngôn ngữ, định dạng, quyền riêng tư và tuân thủ.",
+    "localization": "Ngôn ngữ & định dạng",
+    "interfaceLanguage": "Ngôn ngữ giao diện",
+    "aiAdvisorLanguage": "Ngôn ngữ cố vấn AI",
+    "country": "Quốc gia / Khu vực",
+    "currency": "Tiền tệ",
+    "numberFormat": "Định dạng số",
+    "dateFormat": "Định dạng ngày",
+    "formatPreview": "Xem trước",
+    "previewCurrency": "Tiền tệ",
+    "previewNumber": "Số",
+    "previewDate": "Ngày",
+    "previewPercent": "Phần trăm",
+    "privacy": "Quyền riêng tư nhân viên",
+    "permissions": "Quyền hạn",
+    "roleSimulator": "Mô phỏng vai trò",
+    "roleSimulatorHint": "Xem ATLAS dưới vai trò khác. Những gì bạn thấy và làm sẽ thay đổi.",
+    "dataExport": "Xuất dữ liệu",
+    "compliance": "Tuân thủ",
+    "demoMode": "Chế độ demo",
+    "demoModeHint": "Khi bật, ngày được cố định để dữ liệu mẫu luôn nhất quán.",
+    "resetDemo": "Đặt lại dữ liệu demo",
+    "toastReset": "Đã đặt lại dữ liệu demo",
+    "exportCta": "Xuất dữ liệu (JSON)",
+    "toastExport": "Đã tải xuống bản xuất dữ liệu (demo)",
+    "safetyBuffer": "Mức an toàn tiền mặt",
+    "languageIndependentNote": "Ngôn ngữ giao diện và ngôn ngữ cố vấn AI độc lập với nhau. VD: xem bằng tiếng Việt nhưng để ATLAS viết báo cáo bằng tiếng Anh."
+  },
+  "roles": {
+    "owner": "Chủ",
+    "manager": "Quản lý",
+    "accountant": "Kế toán",
+    "employee": "Nhân viên",
+    "viewer": "Người xem"
+  },
+  "compliance": {
+    "disclaimer": "ATLAS cung cấp thông tin hỗ trợ kinh doanh và không thay thế kế toán viên, luật sư, cố vấn thuế hoặc cố vấn tài chính được cấp phép."
+  },
+  "pricing": {
+    "title": "Gói cước",
+    "free": "Miễn phí",
+    "pro": "Pro",
+    "business": "Doanh nghiệp",
+    "currentPlan": "Gói hiện tại",
+    "upgrade": "Nâng cấp",
+    "freeDesc": "Dòng tiền hằng ngày, sổ sách và câu trả lời AI cho chủ một mình.",
+    "proDesc": "Trung tâm hành động, hóa đơn, lịch làm việc và báo cáo tháng cho nhóm nhỏ.",
+    "businessDesc": "Phân quyền nhiều vai trò, mạng lưới ngành và xuất dữ liệu cho nhóm đang phát triển."
+  },
+  "validation": {
+    "required": "Trường này là bắt buộc",
+    "positiveAmount": "Số tiền phải lớn hơn 0",
+    "invalidNumber": "Vui lòng nhập số hợp lệ"
+  },
+  "empty": {
+    "generic": "Chưa có gì ở đây."
+  },
+  "country": {
+    "CN": "Trung Quốc",
+    "TW": "Đài Loan",
+    "US": "Hoa Kỳ",
+    "JP": "Nhật Bản",
+    "KR": "Hàn Quốc",
+    "MX": "Mexico",
+    "BR": "Brazil",
+    "IN": "Ấn Độ",
+    "ID": "Indonesia",
+    "TH": "Thái Lan",
+    "VN": "Việt Nam",
+    "AE": "UAE",
+    "SA": "Ả Rập Xê Út",
+    "GB": "Vương quốc Anh",
+    "SG": "Singapore"
+  },
+  "ai": {
+    "answer": {
+      "finance": "Hôm nay bạn thu {revenue}, chi {expenses}, còn lại khoảng {profit} lợi nhuận.",
+      "cashflowSafe": "Bạn có thể trang trải giai đoạn sắp tới. Tiền mặt thấp nhất dự kiến là {lowest}, cao hơn mức an toàn {safety}.",
+      "cashflowRisk": "Tiền mặt sắp eo hẹp. Tiền mặt dự kiến có thể giảm xuống {lowest}, dưới mức an toàn {safety}.",
+      "customers": "{count} khách hàng có vẻ sắp rời đi và đáng để liên hệ.",
+      "staffing": "{present} trên {total} người đã chấm công. Mai xếp khoảng {suggested} người có vẻ hợp lý.",
+      "draft": "Tôi đã soạn tin nhắn để bạn xem trước khi gửi.",
+      "report": "Tôi có thể tạo báo cáo hằng tháng bằng ngôn ngữ đơn giản cho bạn.",
+      "peer": "Đây là so sánh ẩn danh với các doanh nghiệp tương tự.",
+      "compliance": "Đây là hướng dẫn chung — hãy kiểm tra chi tiết cụ thể với chuyên gia có chuyên môn.",
+      "unknown": "Tôi chưa chắc về điều đó. Hãy thử hỏi về doanh thu, dòng tiền, khách hàng hoặc nhân viên."
+    },
+    "ev": {
+      "todayRevenue": "Doanh thu hôm nay: {amount}",
+      "todayExpenses": "Chi phí hôm nay: {amount}",
+      "monthRevenue": "Doanh thu đến nay: {amount}",
+      "safetyLine": "Mức an toàn: {amount}",
+      "lowestCash": "Tiền mặt thấp nhất dự kiến: {amount}",
+      "openReceivables": "{count} khoản phải thu đang mở, tổng {amount}",
+      "customerVisits": "{name}: ghé {visits} lần",
+      "clockedIn": "{name} đã chấm công",
+      "notClockedIn": "{name} chưa chấm công",
+      "draftFirst": "Không gì được gửi cho đến khi bạn phê duyệt.",
+      "reportScope": "Bao gồm doanh thu, chi phí, dòng tiền, đội ngũ và khách hàng.",
+      "anonymity": "Mọi so sánh đều được tổng hợp và ẩn danh."
+    },
+    "risk": {
+      "negativeProfit": "Hôm nay bạn chi nhiều hơn thu.",
+      "cashflowDanger": "Tiền mặt có thể xuống dưới mức an toàn trong giai đoạn dự báo.",
+      "churn": "Một số khách trung thành gần đây chưa quay lại."
+    },
+    "next": {
+      "reviewMonth": "So sánh chi phí tháng này với tháng trước.",
+      "collect": "Thu hồi các khoản phải thu quá hạn trước — giải phóng nhiều tiền mặt nhất.",
+      "winback": "Gửi tin nhắn kéo về thân thiện cho khách quen có nguy cơ rời.",
+      "schedule": "Điều chỉnh lịch ngày mai theo nhu cầu dự kiến.",
+      "generateReport": "Tạo báo cáo hằng tháng để thấy bức tranh toàn cảnh."
+    },
+    "tools": {
+      "getRevenueSummary": "Tóm tắt doanh thu theo khoảng thời gian.",
+      "getExpenseSummary": "Tóm tắt chi phí theo danh mục.",
+      "getCashflowForecast": "Dự báo tiền mặt cho những ngày tới.",
+      "getReceivables": "Liệt kê khoản phải thu (lọc theo trạng thái).",
+      "getPayables": "Liệt kê khoản phải trả (lọc theo trạng thái).",
+      "getTopProducts": "Xếp hạng sản phẩm theo doanh thu hoặc số lượng.",
+      "getEmployeeAttendance": "Kiểm tra ai đã chấm công hôm nay.",
+      "getCustomerRiskSegments": "Phân nhóm khách theo nguy cơ rời đi.",
+      "draftMessage": "Soạn tin nhắn để chủ xem.",
+      "createTask": "Tạo công việc hoặc nhắc nhở.",
+      "logAiRecommendation": "Ghi đề xuất AI vào nhật ký kiểm toán."
+    }
+  },
+  "mock": {
+    "tx": {
+      "lunchService": "Phục vụ bữa trưa",
+      "takeaway": "Mang đi",
+      "cateringDeposit": "Cọc tiệc",
+      "freshProduce": "Nguyên liệu tươi",
+      "gasRefill": "Nạp gas",
+      "deliveryFee": "Hoa hồng nền tảng giao hàng",
+      "dailySales": "Doanh thu ngày",
+      "supplierDelivery": "Giao hàng từ nhà cung cấp",
+      "weekendSales": "Doanh thu cuối tuần",
+      "monthlyRent": "Tiền thuê tháng"
+    },
+    "receivable": {
+      "companyCatering": "Đơn tiệc công ty",
+      "eventBalance": "Số dư sự kiện"
+    },
+    "payable": {
+      "meatSupplier": "Hóa đơn nhà cung cấp thịt",
+      "vegWholesaler": "Hóa đơn bán buôn rau",
+      "payroll": "Lương nhân viên"
+    },
+    "vendor": {
+      "meatSupplier": "Prime Meats",
+      "vegWholesaler": "Greenleaf Bán Buôn",
+      "payroll": "Lương"
+    },
+    "customer": {
+      "hongtuTech": "Hongtu Tech",
+      "mrWang": "Ông Vương",
+      "lilyChen": "Lily Chen",
+      "zhangFamily": "Gia đình Trương",
+      "oldTownOffice": "Khu Văn Phòng Phố Cổ"
+    },
+    "employee": {
+      "chefLiu": "Đầu bếp Lưu",
+      "mei": "Mei",
+      "jun": "Jun",
+      "auntZhao": "Dì Triệu",
+      "kevin": "Kevin"
+    },
+    "product": {
+      "beefNoodles": "Mì bò",
+      "dumplings": "Sủi cảo",
+      "coldDrinks": "Đồ uống lạnh"
+    },
+    "action": {
+      "collectPayment": {
+        "title": "Thu {count} khoản phải thu quá hạn",
+        "reason": "{amount} đã quá hạn và đang giữ chặt tiền mặt bạn dùng được ngay.",
+        "draft": "Xin chào, đây là lời nhắc thân thiện rằng hóa đơn {amount} đã quá hạn. Bạn có thể cho biết ngày dự kiến thanh toán không? Cảm ơn!",
+        "ev1": "Một khoản phải thu đã quá hạn.",
+        "ev2": "Thu hồi giải phóng {amount} vốn lưu động."
+      },
+      "winback": {
+        "title": "Kéo khách quen đã rời quay lại",
+        "reason": "Khách quen ghé {visits} lần đã không quay lại {days} ngày.",
+        "draft": "Xin chào! Chúng tôi nhớ bạn lắm. Ghé thăm tuần này để nhận một món quà nhỏ — rất mong gặp lại bạn.",
+        "ev1": "Lần ghé cuối là {days} ngày trước."
+      },
+      "delayPayment": {
+        "title": "Xin hoãn ngắn hạn với nhà cung cấp",
+        "reason": "Hoãn {amount} thêm {days} ngày sẽ giảm bớt ngày eo hẹp.",
+        "draft": "Xin chào, chúng tôi trân trọng quan hệ hợp tác. Liệu chúng tôi có thể hoãn khoản {amount} này thêm {days} ngày? Chúng tôi sẽ xác nhận ngày mới bằng văn bản.",
+        "ev1": "Khoản thanh toán {amount} rơi vào ngày tiền mặt eo hẹp."
+      }
+    },
+    "insight": {
+      "tightCash": {
+        "title": "Tiền mặt sẽ eo hẹp tuần tới",
+        "summary": "Thanh toán nhà cung cấp và lương trùng với các khoản phải thu quá hạn.",
+        "ev1": "Tổng phải thu quá hạn {amount}.",
+        "ev2": "Khoản phải trả đến hạn trong cùng tuần.",
+        "ev3": "Lương cũng đến kỳ trong giai đoạn này."
+      }
+    },
+    "network": {
+      "groupBuy": {
+        "oil": "Mua chung dầu ăn",
+        "coldChain": "Dùng chung giao hàng lạnh"
+      }
+    }
+  }
+}

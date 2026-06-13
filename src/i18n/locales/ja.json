@@ -1,0 +1,593 @@
+{
+  "app": {
+    "name": "ATLAS",
+    "tagline": "世界の小規模ビジネスのためのAI経営OS"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "close": "閉じる",
+    "add": "追加",
+    "edit": "編集",
+    "delete": "削除",
+    "dismiss": "無視",
+    "approve": "承認",
+    "execute": "実行",
+    "back": "戻る",
+    "next": "次へ",
+    "finish": "完了",
+    "loading": "読み込み中…",
+    "all": "すべて",
+    "search": "検索",
+    "today": "今日",
+    "amount": "金額",
+    "date": "日付",
+    "category": "カテゴリ",
+    "status": "状態",
+    "description": "説明",
+    "notes": "メモ",
+    "name": "名前",
+    "role": "役割",
+    "phone": "電話",
+    "email": "メール",
+    "draft": "下書き",
+    "send": "送信",
+    "generate": "生成",
+    "viewAll": "すべて表示",
+    "comingSoon": "近日公開",
+    "mock": "デモ",
+    "high": "高",
+    "medium": "中",
+    "low": "低",
+    "yes": "はい",
+    "no": "いいえ",
+    "optional": "任意",
+    "hidden": "非表示",
+    "restricted": "制限あり",
+    "download": "ダウンロード"
+  },
+  "nav": {
+    "today": "今日",
+    "ask": "ATLASに質問",
+    "ledger": "帳簿",
+    "capture": "レシート",
+    "cashflow": "資金繰り",
+    "actions": "アクション",
+    "team": "チーム",
+    "schedule": "シフト",
+    "customers": "顧客",
+    "reports": "レポート",
+    "network": "同業ネットワーク",
+    "settings": "設定"
+  },
+  "demo": {
+    "banner": "デモデータは {date} を基準にしています。新規入力は実際の現在時刻を使用します。"
+  },
+  "onboarding": {
+    "title": "ATLASへようこそ",
+    "subtitle": "1分以内で設定完了。ATLASは今日からあなたのために働きます。",
+    "stepBusinessType": "どんなビジネスを営んでいますか？",
+    "stepBusinessName": "お店の名前は？",
+    "businessNamePlaceholder": "例：サンライズ麺店",
+    "stepCountry": "ビジネスの所在地は？",
+    "stepCurrency": "使用する通貨は？",
+    "stepUiLanguage": "表示言語",
+    "stepAiLanguage": "AIアドバイザー言語",
+    "stepEmployees": "従業員は何人ですか？",
+    "useDemoData": "デモデータで始めて試してみる",
+    "useDemoDataHint": "設定からいつでも消去できます。",
+    "type": {
+      "restaurant": "飲食・フード",
+      "retail": "小売・店舗",
+      "beauty": "美容・サロン",
+      "education": "教育・研修",
+      "local_service": "地域サービス",
+      "freelance": "フリーランス",
+      "other": "その他"
+    },
+    "employeeRange": {
+      "1-5": "1〜5人",
+      "6-15": "6〜15人",
+      "16-30": "16〜30人",
+      "31-50": "31〜50人",
+      "50+": "50人以上"
+    },
+    "finishCta": "ATLASを始める",
+    "step": "ステップ {current} / {total}"
+  },
+  "dashboard": {
+    "title": "今日",
+    "greeting": "{name}さん、ビジネスの概況です",
+    "aiJudgment": "ATLASの今日の見立て",
+    "judgmentSafe": "本日の売上は {revenue}、支出は {expenses}、手元に {profit} が残りました。今後7日間の資金は安全です。この調子で。",
+    "judgmentWatch": "本日の売上は {revenue}、支出は {expenses}、手元に {profit} が残りました。7日以内に厳しい日が来ます。下の優先アクションをご確認ください。",
+    "judgmentDanger": "本日の売上は {revenue}、支出は {expenses}、手元に {profit} が残りました。資金が安全ライン {safety} を下回る恐れがあります。今すぐ対応を。",
+    "todayRevenue": "本日の売上",
+    "todayExpenses": "本日の支出",
+    "estimatedGrossProfit": "推定粗利",
+    "availableCash": "使える現金",
+    "cashflowRisk": "7日間の資金リスク",
+    "vsYesterday": "前日比",
+    "topActions": "本日の重要アクション3つ",
+    "askPlaceholder": "ATLASにビジネスについて質問…",
+    "voiceHint": "音声入力",
+    "quickActions": "クイック操作",
+    "quickAddTransaction": "記帳",
+    "quickCapture": "レシート読取",
+    "quickCollect": "入金催促",
+    "quickSchedule": "シフト作成",
+    "meaningProfit": "コストを引いた、本日実際に残ったお金です。",
+    "meaningCash": "今すぐ使えるお金です。",
+    "riskSafe": "今後7日間の資金は安全そうです。",
+    "riskWatch": "要注意——厳しい日が近づいています。",
+    "riskDanger": "対応が必要——資金が安全ラインを下回る恐れがあります。",
+    "summaryOnly": "役割に応じて、限定的な概況のみ表示しています。"
+  },
+  "action": {
+    "reason": "理由",
+    "impact": "予想効果",
+    "confidence": "確信度",
+    "amountInvolved": "関係金額",
+    "draft": "下書き",
+    "approved": "承認済み",
+    "executed": "完了",
+    "dismissed": "無視",
+    "draftReady": "下書きが確認待ちです",
+    "evidence": "根拠",
+    "executeConfirmTitle": "このアクションを実行しますか？",
+    "executeConfirmBody": "ATLASはこのアクションを記録し監査ログを残します。このデモでは実際には送信されません。",
+    "type": {
+      "collect_payment": "入金の催促",
+      "delay_payment": "支払いの延期",
+      "customer_winback": "顧客の呼び戻し",
+      "review_reply": "レビュー返信",
+      "schedule_adjustment": "シフト調整",
+      "supplier_negotiation": "仕入先と交渉",
+      "inventory_reminder": "在庫補充",
+      "monthly_review": "月次レビュー"
+    }
+  },
+  "actions": {
+    "title": "アクションセンター",
+    "subtitle": "ATLASが下書きし、あなたが承認。主導権は常にあなたに。",
+    "empty": "保留中のアクションはありません。すべて完了です。",
+    "draftFirst": "ATLASはまず下書きを用意します。承認するまで何も送信されません。",
+    "toastApproved": "アクションを承認しました",
+    "toastExecuted": "アクションを実行しました（デモ）",
+    "toastDismissed": "アクションを無視しました",
+    "toastDrafted": "下書きをアクションセンターに追加しました",
+    "filterAll": "すべて",
+    "filterDraft": "下書き",
+    "filterApproved": "承認済み",
+    "filterExecuted": "完了",
+    "filterDismissed": "無視",
+    "pendingCount": "{count} 件の下書きが待っています"
+  },
+  "ask": {
+    "title": "ATLASに質問",
+    "subtitle": "お金、顧客、スタッフ、次にすべきことを質問。",
+    "placeholder": "例：今日はいくら稼いだ？",
+    "voicePlaceholder": "音声入力（近日公開）",
+    "advisorLanguage": "AIアドバイザー言語",
+    "answer": "回答",
+    "evidence": "あなたのデータに基づく",
+    "risk": "注意すべきリスク",
+    "nextSteps": "おすすめの次の一手",
+    "actionsLabel": "アクションを取る",
+    "suggested": "質問例",
+    "thinking": "ATLASが考えています…",
+    "usedTools": "使用ツール",
+    "missingData": "不足データ",
+    "clearChat": "会話を消去",
+    "you": "あなた",
+    "samples": {
+      "revenue": "今日はいくら稼いだ？",
+      "profitDrop": "今月利益が下がったのはなぜ？",
+      "payroll": "来週の給料は払える？",
+      "churn": "離れそうな顧客は？",
+      "draft": "入金催促のメッセージを書いて",
+      "staffing": "明日は何人シフトに入れるべき？"
+    }
+  },
+  "ledger": {
+    "title": "帳簿",
+    "subtitle": "お金の出入りを、すべて整理。",
+    "income": "収入",
+    "expense": "支出",
+    "receivables": "売掛",
+    "payables": "買掛",
+    "addTransaction": "記帳",
+    "newTransaction": "新規記録",
+    "type": "種別",
+    "paymentMethod": "支払方法",
+    "forecastCta": "資金繰り予測を見る",
+    "noTransactions": "まだ記録がありません。最初の1件を追加しましょう。",
+    "due": "期日：{date}",
+    "markPaid": "支払済みにする",
+    "method": {
+      "cash": "現金",
+      "card": "カード",
+      "bank": "銀行振込",
+      "wallet": "電子マネー",
+      "other": "その他"
+    },
+    "status": {
+      "open": "未決済",
+      "overdue": "延滞",
+      "paid": "決済済"
+    },
+    "incomeCategory": {
+      "sales": "売上",
+      "service": "サービス収入",
+      "prepayment": "前受金",
+      "other_income": "その他収入"
+    },
+    "expenseCategory": {
+      "raw_materials": "原材料",
+      "rent": "家賃",
+      "payroll": "給与",
+      "utilities": "光熱費",
+      "logistics": "物流",
+      "marketing": "マーケティング",
+      "platform_commission": "プラットフォーム手数料",
+      "tax": "税金",
+      "other_expense": "その他支出"
+    },
+    "toastAdded": "記録を追加しました"
+  },
+  "capture": {
+    "title": "レシート読取",
+    "subtitle": "レシートを撮るだけ。ATLASが読み取ります。",
+    "uploadHint": "タップして撮影またはレシートをアップロード",
+    "scanning": "レシートを読み取り中…",
+    "result": "認識結果",
+    "merchant": "店舗",
+    "tax": "税額",
+    "confidence": "確信度",
+    "lowConfidenceWarning": "保存前にハイライト項目をご確認ください。",
+    "fieldLowConfidence": "確信度が低い——要確認",
+    "confirmSave": "確認して帳簿に保存",
+    "demoCta": "デモ読取を実行",
+    "toastSaved": "レシートを帳簿に保存しました"
+  },
+  "cashflow": {
+    "title": "資金繰り予測",
+    "subtitle": "トラブルが来る前に見つける。",
+    "next7": "今後7日",
+    "next30": "今後30日",
+    "riskDate": "リスク日",
+    "lowestCash": "予測最低残高",
+    "projectedCash": "予測現金",
+    "safetyLine": "安全ライン",
+    "impactReceivables": "売掛の影響",
+    "impactPayables": "買掛の影響",
+    "impactPayroll": "給与の影響",
+    "suggestedAction": "おすすめアクション",
+    "actionCollect": "催促を下書き",
+    "actionDelay": "延期依頼を下書き",
+    "chartCash": "現金",
+    "chartDay": "日",
+    "status": {
+      "safe": "安全",
+      "watch": "注意",
+      "danger": "危険"
+    }
+  },
+  "team": {
+    "title": "チーム",
+    "subtitle": "スタッフ、シフト、タスク。",
+    "clockStatus": "本日の打刻",
+    "geofence": "位置情報の同意",
+    "scheduleCta": "シフトを開く",
+    "privacyNotice": "従業員の位置情報・ジオフェンス勤怠には本人の明示的な同意が必要です。",
+    "consentGiven": "同意済み",
+    "consentMissing": "同意が必要",
+    "consentOwnerNote": "この同意は従業員本人のみが付与・取消できます。",
+    "clockedIn": "打刻済み",
+    "notClockedIn": "未打刻",
+    "privateRedacted": "あなたの役割では個人連絡先は非表示です。",
+    "status": {
+      "active": "在籍",
+      "inactive": "停止"
+    }
+  },
+  "schedule": {
+    "title": "シフト作成",
+    "subtitle": "使いすぎずに全シフトをカバー。",
+    "generateCta": "AIでシフト生成",
+    "notifyCta": "従業員に通知",
+    "understaffed": "人手不足",
+    "conflict": "競合",
+    "ok": "充足",
+    "estimatedCost": "週間人件費の見込み",
+    "conflictsFound": "{count} 件の競合を検出",
+    "toastGenerated": "AIシフトの下書きをアクションセンターに作成しました",
+    "toastNotified": "従業員に通知しました（デモ）",
+    "days": {
+      "mon": "月",
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土",
+      "sun": "日"
+    }
+  },
+  "customers": {
+    "title": "顧客",
+    "subtitle": "誰が常連で、誰が離れそうか。",
+    "totalSpend": "累計支出",
+    "visits": "来店回数",
+    "lastVisit": "前回来店",
+    "winbackCta": "呼び戻しメッセージを下書き",
+    "winbackTitle": "呼び戻しメッセージ",
+    "winbackConfirm": "アクションセンターに追加",
+    "atRiskCount": "{count} 名の顧客に注意が必要",
+    "segment": {
+      "high_value": "高価値",
+      "new": "新規",
+      "at_risk": "離反リスク",
+      "price_sensitive": "価格重視",
+      "dormant": "休眠"
+    }
+  },
+  "reports": {
+    "title": "月次レポート",
+    "subtitle": "あなたのビジネスを平易な言葉で診断。",
+    "generateCta": "今月のレポートを生成",
+    "exportPdf": "PDF出力",
+    "headline": "ひとことサマリー",
+    "headlineBody": "今月は売上が横ばいでコストが上昇。利益率を守り、延滞売掛の回収を。",
+    "keyMetrics": "主要指標",
+    "goodNews": "良いこと3つ",
+    "good1": "週末売上は最強チャネルで、まだ伸びています。",
+    "good2": "高価値顧客が繰り返し来店し、客単価を押し上げています。",
+    "good3": "レシート読取で、ほぼ手間なく帳簿が最新に保たれています。",
+    "alerts": "アラート2つ",
+    "alert1": "延滞売掛が、いま使える現金を縛っています。",
+    "alert2": "原材料コストが同業ベンチマークを上回っています。",
+    "profitChange": "利益が変動した理由",
+    "profitChangeBody": "利益の変動は主に、今月の原材料コストが売上より速く上昇したためです。",
+    "cashflowRisk": "資金リスク",
+    "cashflowRiskBody": "来週、仕入先支払いと給与が重なり、厳しい時期があります。",
+    "teamSummary": "チーム概況",
+    "teamSummaryBody": "平日は需要に人員が見合い、週末は時折人手不足でした。",
+    "customerSummary": "顧客概況",
+    "customerSummaryBody": "少数の常連が売上の大半を支えています。休眠顧客が1件、呼び戻す価値あり。",
+    "mostImportant": "来月の最重要事項",
+    "mostImportantBody": "延滞売掛を回収し、原材料価格を再交渉する。",
+    "recommendedActions": "推奨アクション",
+    "advisorLanguageNote": "レポート言語はAIアドバイザー言語に従います：{language}",
+    "toastExport": "PDF出力は近日公開"
+  },
+  "network": {
+    "title": "同業ネットワーク",
+    "subtitle": "同種のビジネスと匿名で比較。",
+    "grossMarginRange": "業界の粗利率レンジ",
+    "yourMargin": "あなたの粗利率",
+    "costStructure": "コスト構造の比較",
+    "you": "あなた",
+    "peers": "同業",
+    "groupBuying": "共同購入の関心",
+    "supplierRecs": "仕入先のおすすめ",
+    "industryAlerts": "業界アラート",
+    "anonymityNotice": "同業データはすべて集約・匿名化されており、個々の事業者は特定できません。",
+    "sampleSize": "同種 {count} 事業者に基づく",
+    "kAnonymityBlocked": "匿名で表示するには同種の事業者が不足しています（最低 {min} 件必要）。",
+    "participants": "{count} 件が関心あり",
+    "joinGroupBuy": "関心を示す"
+  },
+  "settings": {
+    "title": "設定",
+    "subtitle": "言語・形式・プライバシー・コンプライアンス。",
+    "localization": "言語と形式",
+    "interfaceLanguage": "表示言語",
+    "aiAdvisorLanguage": "AIアドバイザー言語",
+    "country": "国 / 地域",
+    "currency": "通貨",
+    "numberFormat": "数値形式",
+    "dateFormat": "日付形式",
+    "formatPreview": "プレビュー",
+    "previewCurrency": "通貨",
+    "previewNumber": "数値",
+    "previewDate": "日付",
+    "previewPercent": "パーセント",
+    "privacy": "従業員プライバシー",
+    "permissions": "権限",
+    "roleSimulator": "役割シミュレーター",
+    "roleSimulatorHint": "別の役割でATLASをプレビュー。見える内容と操作が変わります。",
+    "dataExport": "データ出力",
+    "compliance": "コンプライアンス",
+    "demoMode": "デモモード",
+    "demoModeHint": "オンの間、日付が固定されサンプルデータの整合性が保たれます。",
+    "resetDemo": "デモデータをリセット",
+    "toastReset": "デモデータをリセットしました",
+    "exportCta": "データ出力（JSON）",
+    "toastExport": "データを出力しました（デモ）",
+    "safetyBuffer": "現金の安全ライン",
+    "languageIndependentNote": "表示言語とAIアドバイザー言語は独立しています。例：日本語で操作しつつ、ATLASに英語でレポートを書かせる。"
+  },
+  "roles": {
+    "owner": "オーナー",
+    "manager": "店長",
+    "accountant": "経理",
+    "employee": "従業員",
+    "viewer": "閲覧者"
+  },
+  "compliance": {
+    "disclaimer": "ATLASは経営支援情報を提供するもので、公認会計士・弁護士・税理士・有資格のファイナンシャルアドバイザーに代わるものではありません。"
+  },
+  "pricing": {
+    "title": "プラン",
+    "free": "無料",
+    "pro": "プロ",
+    "business": "ビジネス",
+    "currentPlan": "現在のプラン",
+    "upgrade": "アップグレード",
+    "freeDesc": "個人オーナー向けの日次資金繰り・帳簿・AI回答。",
+    "proDesc": "小規模チーム向けのアクションセンター・レシート・シフト・月次レポート。",
+    "businessDesc": "成長チーム向けの多役割権限・同業ネットワーク・データ出力。"
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "positiveAmount": "金額は0より大きくしてください",
+    "invalidNumber": "有効な数値を入力してください"
+  },
+  "empty": {
+    "generic": "まだ何もありません。"
+  },
+  "country": {
+    "CN": "中国",
+    "TW": "台湾",
+    "US": "アメリカ",
+    "JP": "日本",
+    "KR": "韓国",
+    "MX": "メキシコ",
+    "BR": "ブラジル",
+    "IN": "インド",
+    "ID": "インドネシア",
+    "TH": "タイ",
+    "VN": "ベトナム",
+    "AE": "アラブ首長国連邦",
+    "SA": "サウジアラビア",
+    "GB": "イギリス",
+    "SG": "シンガポール"
+  },
+  "ai": {
+    "answer": {
+      "finance": "本日は {revenue} を売り上げ、{expenses} を使い、約 {profit} が残りました。",
+      "cashflowSafe": "今後の期間はカバーできます。予測最低残高は {lowest} で、安全ライン {safety} を上回ります。",
+      "cashflowRisk": "まもなく資金が厳しくなります。予測現金は {lowest} まで下がり、安全ライン {safety} を下回ります。",
+      "customers": "{count} 名の顧客に離反の恐れがあり、連絡する価値があります。",
+      "staffing": "{total} 名中 {present} 名が打刻済み。明日は {suggested} 名ほどが適切です。",
+      "draft": "送信前に確認できるよう、メッセージを下書きしました。",
+      "report": "平易な言葉の月次レポートを作成できます。",
+      "peer": "同種のビジネスとの匿名比較です。",
+      "compliance": "一般的なご案内です——具体的な点は有資格の専門家にご確認ください。",
+      "unknown": "まだ分かりません。売上・資金繰り・顧客・スタッフについて聞いてみてください。"
+    },
+    "ev": {
+      "todayRevenue": "本日の売上：{amount}",
+      "todayExpenses": "本日の支出：{amount}",
+      "monthRevenue": "これまでの売上：{amount}",
+      "safetyLine": "安全ライン：{amount}",
+      "lowestCash": "予測最低残高：{amount}",
+      "openReceivables": "未決済の売掛 {count} 件、合計 {amount}",
+      "customerVisits": "{name}：来店 {visits} 回",
+      "clockedIn": "{name} は打刻済み",
+      "notClockedIn": "{name} は未打刻",
+      "draftFirst": "あなたが承認するまで何も送信されません。",
+      "reportScope": "売上・コスト・資金繰り・チーム・顧客を網羅。",
+      "anonymity": "すべての比較は集約・匿名化されています。"
+    },
+    "risk": {
+      "negativeProfit": "今日は稼ぎより支出が多くなりました。",
+      "cashflowDanger": "予測期間内に資金が安全ラインを下回る恐れがあります。",
+      "churn": "一部の常連が最近来店していません。"
+    },
+    "next": {
+      "reviewMonth": "今月のコストを先月と比べてみましょう。",
+      "collect": "まず延滞売掛を回収——最も多くの現金が空きます。",
+      "winback": "離反リスクの常連に、友好的な呼び戻しメッセージを送りましょう。",
+      "schedule": "明日のシフトを予想需要に合わせて調整しましょう。",
+      "generateReport": "全体像のために月次レポートを生成しましょう。"
+    },
+    "tools": {
+      "getRevenueSummary": "期間の売上を集計します。",
+      "getExpenseSummary": "カテゴリ別に支出を集計します。",
+      "getCashflowForecast": "今後数日の現金を予測します。",
+      "getReceivables": "売掛を一覧（状態で絞込可）。",
+      "getPayables": "買掛を一覧（状態で絞込可）。",
+      "getTopProducts": "売上または数量で商品をランキング。",
+      "getEmployeeAttendance": "今日の打刻状況を確認。",
+      "getCustomerRiskSegments": "離反リスクで顧客を分類。",
+      "draftMessage": "オーナーが確認するメッセージを下書き。",
+      "createTask": "タスクやリマインダーを作成。",
+      "logAiRecommendation": "AIの提案を監査ログに記録。"
+    }
+  },
+  "mock": {
+    "tx": {
+      "lunchService": "ランチ営業",
+      "takeaway": "テイクアウト注文",
+      "cateringDeposit": "ケータリング前金",
+      "freshProduce": "生鮮仕入",
+      "gasRefill": "ガス補充",
+      "deliveryFee": "デリバリー手数料",
+      "dailySales": "日次売上",
+      "supplierDelivery": "仕入先納品",
+      "weekendSales": "週末売上",
+      "monthlyRent": "月額家賃"
+    },
+    "receivable": {
+      "companyCatering": "法人ケータリング注文",
+      "eventBalance": "イベント残金"
+    },
+    "payable": {
+      "meatSupplier": "精肉仕入先の請求",
+      "vegWholesaler": "青果卸の請求",
+      "payroll": "従業員給与"
+    },
+    "vendor": {
+      "meatSupplier": "プライムミート社",
+      "vegWholesaler": "グリーンリーフ卸",
+      "payroll": "給与"
+    },
+    "customer": {
+      "hongtuTech": "ホンツ・テック",
+      "mrWang": "王さん",
+      "lilyChen": "リリー・チェン",
+      "zhangFamily": "張さん一家",
+      "oldTownOffice": "旧市街オフィスパーク"
+    },
+    "employee": {
+      "chefLiu": "リュウ料理長",
+      "mei": "メイ",
+      "jun": "ジュン",
+      "auntZhao": "ザオさん",
+      "kevin": "ケビン"
+    },
+    "product": {
+      "beefNoodles": "牛肉麺",
+      "dumplings": "餃子",
+      "coldDrinks": "冷たい飲み物"
+    },
+    "action": {
+      "collectPayment": {
+        "title": "延滞売掛 {count} 件を催促",
+        "reason": "{amount} が延滞しており、いま使える現金を縛っています。",
+        "draft": "お世話になっております。{amount} の請求が期日を過ぎております。お支払い予定をお知らせいただけますか。よろしくお願いいたします。",
+        "ev1": "売掛1件が期日を過ぎています。",
+        "ev2": "回収で運転資金 {amount} が空きます。"
+      },
+      "winback": {
+        "title": "離れた常連を呼び戻す",
+        "reason": "来店 {visits} 回の常連が {days} 日来店していません。",
+        "draft": "お久しぶりです！最近お会いできず寂しく思っております。今週ぜひお越しください。ささやかなおもてなしをご用意してお待ちしております。",
+        "ev1": "前回来店は {days} 日前です。"
+      },
+      "delayPayment": {
+        "title": "仕入先に短期延期を依頼",
+        "reason": "{amount} を {days} 日延ばすと厳しい日を緩和できます。",
+        "draft": "いつもお世話になっております。この {amount} のお支払いを {days} 日延期させていただけますか。新しい期日は書面でご確認いたします。",
+        "ev1": "{amount} の支払いが資金の厳しい日に重なります。"
+      }
+    },
+    "insight": {
+      "tightCash": {
+        "title": "来週、資金が厳しくなります",
+        "summary": "仕入先支払いと給与が延滞売掛と重なります。",
+        "ev1": "延滞売掛は合計 {amount}。",
+        "ev2": "同じ週に買掛が期日を迎えます。",
+        "ev3": "給与もこの期間内に予定されています。"
+      }
+    },
+    "network": {
+      "groupBuy": {
+        "oil": "食用油の共同購入",
+        "coldChain": "冷蔵配送の共同利用"
+      }
+    }
+  }
+}

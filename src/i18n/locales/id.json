@@ -1,0 +1,593 @@
+{
+  "app": {
+    "name": "ATLAS",
+    "tagline": "Sistem operasi bisnis berbasis AI untuk usaha kecil di seluruh dunia"
+  },
+  "common": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "close": "Tutup",
+    "add": "Tambah",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "dismiss": "Abaikan",
+    "approve": "Setujui",
+    "execute": "Jalankan",
+    "back": "Kembali",
+    "next": "Lanjut",
+    "finish": "Selesai",
+    "loading": "Memuat…",
+    "all": "Semua",
+    "search": "Cari",
+    "today": "Hari ini",
+    "amount": "Jumlah",
+    "date": "Tanggal",
+    "category": "Kategori",
+    "status": "Status",
+    "description": "Deskripsi",
+    "notes": "Catatan",
+    "name": "Nama",
+    "role": "Peran",
+    "phone": "Telepon",
+    "email": "Email",
+    "draft": "Draf",
+    "send": "Kirim",
+    "generate": "Buat",
+    "viewAll": "Lihat semua",
+    "comingSoon": "Segera hadir",
+    "mock": "Demo",
+    "high": "Tinggi",
+    "medium": "Sedang",
+    "low": "Rendah",
+    "yes": "Ya",
+    "no": "Tidak",
+    "optional": "opsional",
+    "hidden": "Disembunyikan",
+    "restricted": "Terbatas",
+    "download": "Unduh"
+  },
+  "nav": {
+    "today": "Hari ini",
+    "ask": "Tanya ATLAS",
+    "ledger": "Buku kas",
+    "capture": "Struk",
+    "cashflow": "Arus kas",
+    "actions": "Aksi",
+    "team": "Tim",
+    "schedule": "Jadwal",
+    "customers": "Pelanggan",
+    "reports": "Laporan",
+    "network": "Jaringan rekan",
+    "settings": "Pengaturan"
+  },
+  "demo": {
+    "banner": "Data demo ditambatkan ke {date}. Entri baru memakai waktu kini sebenarnya."
+  },
+  "onboarding": {
+    "title": "Selamat datang di ATLAS",
+    "subtitle": "Siapkan bisnis Anda dalam kurang dari satu menit. ATLAS mulai bekerja untuk Anda hari ini.",
+    "stepBusinessType": "Jenis bisnis apa yang Anda jalankan?",
+    "stepBusinessName": "Apa nama bisnis Anda?",
+    "businessNamePlaceholder": "mis. Kedai Mie Fajar",
+    "stepCountry": "Di mana lokasi bisnis Anda?",
+    "stepCurrency": "Mata uang apa yang Anda pakai?",
+    "stepUiLanguage": "Bahasa antarmuka",
+    "stepAiLanguage": "Bahasa penasihat AI",
+    "stepEmployees": "Berapa orang yang bekerja di sini?",
+    "useDemoData": "Mulai dengan data demo untuk menjelajah",
+    "useDemoDataHint": "Anda bisa menghapusnya kapan saja di Pengaturan.",
+    "type": {
+      "restaurant": "Restoran & makanan",
+      "retail": "Ritel & toko",
+      "beauty": "Kecantikan & salon",
+      "education": "Pelatihan & pendidikan",
+      "local_service": "Layanan lokal",
+      "freelance": "Tim lepas",
+      "other": "Lainnya"
+    },
+    "employeeRange": {
+      "1-5": "1-5 orang",
+      "6-15": "6-15 orang",
+      "16-30": "16-30 orang",
+      "31-50": "31-50 orang",
+      "50+": "Lebih dari 50"
+    },
+    "finishCta": "Masuk ke ATLAS",
+    "step": "Langkah {current} dari {total}"
+  },
+  "dashboard": {
+    "title": "Hari ini",
+    "greeting": "Sekilas bisnis Anda, {name}",
+    "aiJudgment": "Penilaian ATLAS hari ini",
+    "judgmentSafe": "Hari ini Anda meraih {revenue} dan mengeluarkan {expenses}, sehingga sisa {profit}. Kas aman untuk 7 hari ke depan — pertahankan momentumnya.",
+    "judgmentWatch": "Hari ini Anda meraih {revenue} dan mengeluarkan {expenses}, sehingga sisa {profit}. Hari ketat datang dalam 7 hari — tinjau aksi utama di bawah.",
+    "judgmentDanger": "Hari ini Anda meraih {revenue} dan mengeluarkan {expenses}, sehingga sisa {profit}. Kas bisa turun di bawah batas aman {safety} — bertindaklah sekarang.",
+    "todayRevenue": "Pendapatan hari ini",
+    "todayExpenses": "Pengeluaran hari ini",
+    "estimatedGrossProfit": "Perkiraan laba kotor",
+    "availableCash": "Kas tersedia",
+    "cashflowRisk": "Risiko kas 7 hari",
+    "vsYesterday": "vs kemarin",
+    "topActions": "3 aksi teratas hari ini",
+    "askPlaceholder": "Tanya ATLAS tentang bisnis Anda…",
+    "voiceHint": "Input suara",
+    "quickActions": "Aksi cepat",
+    "quickAddTransaction": "Catat",
+    "quickCapture": "Pindai struk",
+    "quickCollect": "Tagih",
+    "quickSchedule": "Susun jadwal",
+    "meaningProfit": "Setelah biaya, inilah yang benar-benar Anda simpan hari ini.",
+    "meaningCash": "Ini uang yang bisa Anda pakai sekarang.",
+    "riskSafe": "Kas terlihat aman untuk 7 hari ke depan.",
+    "riskWatch": "Perhatikan — hari ketat mendekat.",
+    "riskDanger": "Perlu tindakan — kas bisa turun di bawah batas aman.",
+    "summaryOnly": "Anda melihat ringkasan terbatas sesuai peran Anda."
+  },
+  "action": {
+    "reason": "Alasan",
+    "impact": "Dampak diperkirakan",
+    "confidence": "Keyakinan",
+    "amountInvolved": "Jumlah terkait",
+    "draft": "Draf",
+    "approved": "Disetujui",
+    "executed": "Selesai",
+    "dismissed": "Diabaikan",
+    "draftReady": "Draf siap ditinjau",
+    "evidence": "Bukti",
+    "executeConfirmTitle": "Jalankan aksi ini?",
+    "executeConfirmBody": "ATLAS akan mencatat aksi ini dan menulis log audit. Dalam demo ini tidak ada yang benar-benar dikirim.",
+    "type": {
+      "collect_payment": "Tagih pembayaran",
+      "delay_payment": "Tunda bayar pemasok",
+      "customer_winback": "Tarik kembali pelanggan",
+      "review_reply": "Balas ulasan",
+      "schedule_adjustment": "Sesuaikan jadwal",
+      "supplier_negotiation": "Nego dengan pemasok",
+      "inventory_reminder": "Isi ulang stok",
+      "monthly_review": "Tinjauan bulanan"
+    }
+  },
+  "actions": {
+    "title": "Pusat Aksi",
+    "subtitle": "ATLAS menyiapkan draf. Anda menyetujui dan tetap memegang kendali.",
+    "empty": "Tidak ada aksi tertunda. Anda sudah beres.",
+    "draftFirst": "ATLAS menyiapkan draf dulu. Tidak ada yang dikirim sampai Anda setujui.",
+    "toastApproved": "Aksi disetujui",
+    "toastExecuted": "Aksi dijalankan (demo)",
+    "toastDismissed": "Aksi diabaikan",
+    "toastDrafted": "Draf ditambahkan ke Pusat Aksi",
+    "filterAll": "Semua",
+    "filterDraft": "Draf",
+    "filterApproved": "Disetujui",
+    "filterExecuted": "Selesai",
+    "filterDismissed": "Diabaikan",
+    "pendingCount": "{count} draf menunggu Anda"
+  },
+  "ask": {
+    "title": "Tanya ATLAS",
+    "subtitle": "Tanya soal uang, pelanggan, staf, atau apa yang harus dilakukan.",
+    "placeholder": "mis. Berapa pendapatan saya hari ini?",
+    "voicePlaceholder": "Input suara (segera hadir)",
+    "advisorLanguage": "Bahasa penasihat AI",
+    "answer": "Jawaban",
+    "evidence": "Berdasarkan data Anda",
+    "risk": "Risiko yang perlu diawasi",
+    "nextSteps": "Langkah berikutnya yang disarankan",
+    "actionsLabel": "Ambil tindakan",
+    "suggested": "Coba tanyakan",
+    "thinking": "ATLAS sedang berpikir…",
+    "usedTools": "Alat yang dipakai",
+    "missingData": "Data yang kurang",
+    "clearChat": "Hapus obrolan",
+    "you": "Anda",
+    "samples": {
+      "revenue": "Berapa pendapatan saya hari ini?",
+      "profitDrop": "Kenapa laba turun bulan ini?",
+      "payroll": "Apakah saya bisa bayar gaji minggu depan?",
+      "churn": "Pelanggan mana yang akan pergi?",
+      "draft": "Tulis pesan pengingat pembayaran",
+      "staffing": "Berapa orang yang harus saya jadwalkan besok?"
+    }
+  },
+  "ledger": {
+    "title": "Buku kas",
+    "subtitle": "Setiap rupiah masuk dan keluar, tertata.",
+    "income": "Pemasukan",
+    "expense": "Pengeluaran",
+    "receivables": "Piutang",
+    "payables": "Utang",
+    "addTransaction": "Catat",
+    "newTransaction": "Transaksi baru",
+    "type": "Jenis",
+    "paymentMethod": "Metode bayar",
+    "forecastCta": "Lihat prakiraan arus kas",
+    "noTransactions": "Belum ada transaksi. Tambahkan yang pertama.",
+    "due": "Jatuh tempo {date}",
+    "markPaid": "Tandai lunas",
+    "method": {
+      "cash": "Tunai",
+      "card": "Kartu",
+      "bank": "Transfer bank",
+      "wallet": "Dompet digital",
+      "other": "Lainnya"
+    },
+    "status": {
+      "open": "Terbuka",
+      "overdue": "Terlambat",
+      "paid": "Lunas"
+    },
+    "incomeCategory": {
+      "sales": "Penjualan",
+      "service": "Pendapatan jasa",
+      "prepayment": "Uang muka",
+      "other_income": "Pemasukan lain"
+    },
+    "expenseCategory": {
+      "raw_materials": "Bahan baku",
+      "rent": "Sewa",
+      "payroll": "Gaji",
+      "utilities": "Utilitas",
+      "logistics": "Logistik",
+      "marketing": "Pemasaran",
+      "platform_commission": "Komisi platform",
+      "tax": "Pajak",
+      "other_expense": "Pengeluaran lain"
+    },
+    "toastAdded": "Transaksi ditambahkan"
+  },
+  "capture": {
+    "title": "Tangkap struk",
+    "subtitle": "Foto struk. ATLAS membacanya untuk Anda.",
+    "uploadHint": "Ketuk untuk memotret atau unggah struk",
+    "scanning": "Membaca struk…",
+    "result": "Detail terbaca",
+    "merchant": "Pedagang",
+    "tax": "Pajak",
+    "confidence": "Keyakinan",
+    "lowConfidenceWarning": "Periksa kolom yang disorot sebelum menyimpan.",
+    "fieldLowConfidence": "Keyakinan rendah — harap periksa",
+    "confirmSave": "Konfirmasi & simpan ke buku kas",
+    "demoCta": "Jalankan pindai demo",
+    "toastSaved": "Struk disimpan ke buku kas"
+  },
+  "cashflow": {
+    "title": "Prakiraan arus kas",
+    "subtitle": "Lihat masalah sebelum datang.",
+    "next7": "7 hari ke depan",
+    "next30": "30 hari ke depan",
+    "riskDate": "Tanggal risiko",
+    "lowestCash": "Kas terendah diproyeksikan",
+    "projectedCash": "Kas diproyeksikan",
+    "safetyLine": "Batas aman",
+    "impactReceivables": "Dampak piutang",
+    "impactPayables": "Dampak utang",
+    "impactPayroll": "Dampak gaji",
+    "suggestedAction": "Aksi disarankan",
+    "actionCollect": "Buat penagihan",
+    "actionDelay": "Buat permintaan penundaan",
+    "chartCash": "Kas",
+    "chartDay": "Hari",
+    "status": {
+      "safe": "Aman",
+      "watch": "Awas",
+      "danger": "Bahaya"
+    }
+  },
+  "team": {
+    "title": "Tim",
+    "subtitle": "Orang Anda, shift, dan tugasnya.",
+    "clockStatus": "Absen hari ini",
+    "geofence": "Persetujuan geofence",
+    "scheduleCta": "Buka jadwal",
+    "privacyNotice": "Lokasi karyawan dan absensi geofence memerlukan persetujuan eksplisit karyawan.",
+    "consentGiven": "Sudah setuju",
+    "consentMissing": "Perlu persetujuan",
+    "consentOwnerNote": "Hanya karyawan yang dapat memberi atau mencabut persetujuan ini.",
+    "clockedIn": "Sudah absen",
+    "notClockedIn": "Belum absen",
+    "privateRedacted": "Detail kontak pribadi disembunyikan untuk peran Anda.",
+    "status": {
+      "active": "Aktif",
+      "inactive": "Nonaktif"
+    }
+  },
+  "schedule": {
+    "title": "Penyusun jadwal",
+    "subtitle": "Tutupi setiap shift tanpa boros.",
+    "generateCta": "Buat jadwal dengan AI",
+    "notifyCta": "Beri tahu karyawan",
+    "understaffed": "Kekurangan staf",
+    "conflict": "Bentrok",
+    "ok": "Tertutup",
+    "estimatedCost": "Perkiraan biaya tenaga kerja mingguan",
+    "conflictsFound": "{count} bentrok terdeteksi",
+    "toastGenerated": "Draf jadwal AI dibuat di Pusat Aksi",
+    "toastNotified": "Karyawan diberi tahu (demo)",
+    "days": {
+      "mon": "Sen",
+      "tue": "Sel",
+      "wed": "Rab",
+      "thu": "Kam",
+      "fri": "Jum",
+      "sat": "Sab",
+      "sun": "Min"
+    }
+  },
+  "customers": {
+    "title": "Pelanggan",
+    "subtitle": "Kenali siapa yang loyal, siapa yang pergi.",
+    "totalSpend": "Total belanja",
+    "visits": "Kunjungan",
+    "lastVisit": "Kunjungan terakhir",
+    "winbackCta": "Buat pesan tarik kembali",
+    "winbackTitle": "Pesan tarik kembali",
+    "winbackConfirm": "Tambahkan ke Pusat Tindakan",
+    "atRiskCount": "{count} pelanggan perlu perhatian",
+    "segment": {
+      "high_value": "Bernilai tinggi",
+      "new": "Baru",
+      "at_risk": "Berisiko",
+      "price_sensitive": "Sensitif harga",
+      "dormant": "Pasif"
+    }
+  },
+  "reports": {
+    "title": "Laporan bulanan",
+    "subtitle": "Diagnosis bisnis Anda dalam bahasa sederhana.",
+    "generateCta": "Buat laporan bulan ini",
+    "exportPdf": "Ekspor PDF",
+    "headline": "Ringkasan satu baris",
+    "headlineBody": "Pendapatan stabil bulan ini sementara biaya merangkak naik; jaga marjin dan tagih piutang yang lewat tempo.",
+    "keyMetrics": "Metrik utama",
+    "goodNews": "Tiga hal baik",
+    "good1": "Penjualan akhir pekan adalah kanal terkuat Anda dan masih tumbuh.",
+    "good2": "Pelanggan bernilai tinggi terus kembali dan menaikkan nilai transaksi.",
+    "good3": "Tangkap struk menjaga pembukuan tetap mutakhir dengan sedikit usaha.",
+    "alerts": "Dua peringatan",
+    "alert1": "Piutang lewat tempo mengikat kas yang bisa Anda pakai sekarang.",
+    "alert2": "Biaya bahan baku di atas tolok ukur rekan.",
+    "profitChange": "Mengapa laba berubah",
+    "profitChangeBody": "Laba berubah terutama karena biaya bahan baku naik lebih cepat dari pendapatan bulan ini.",
+    "cashflowRisk": "Risiko arus kas",
+    "cashflowRiskBody": "Muncul masa ketat minggu depan saat pembayaran pemasok dan gaji bertumpuk.",
+    "teamSummary": "Ringkasan tim",
+    "teamSummaryBody": "Staf sesuai permintaan di hari kerja; akhir pekan kadang kekurangan orang.",
+    "customerSummary": "Ringkasan pelanggan",
+    "customerSummaryBody": "Sedikit pelanggan loyal menggerakkan sebagian besar pendapatan; satu akun pasif layak ditarik kembali.",
+    "mostImportant": "Satu hal untuk bulan depan",
+    "mostImportantBody": "Tagih piutang lewat tempo dan negosiasikan ulang harga bahan baku.",
+    "recommendedActions": "Aksi yang disarankan",
+    "advisorLanguageNote": "Bahasa laporan mengikuti bahasa penasihat AI Anda: {language}",
+    "toastExport": "Ekspor PDF segera hadir"
+  },
+  "network": {
+    "title": "Jaringan rekan",
+    "subtitle": "Bandingkan dengan bisnis serupa, secara anonim.",
+    "grossMarginRange": "Rentang marjin kotor industri",
+    "yourMargin": "Marjin Anda",
+    "costStructure": "Perbandingan struktur biaya",
+    "you": "Anda",
+    "peers": "Rekan",
+    "groupBuying": "Minat beli bersama",
+    "supplierRecs": "Rekomendasi pemasok",
+    "industryAlerts": "Peringatan industri",
+    "anonymityNotice": "Semua data rekan diagregasi dan dianonimkan. Tidak ada bisnis tunggal yang bisa diidentifikasi.",
+    "sampleSize": "Berdasarkan {count} bisnis serupa",
+    "kAnonymityBlocked": "Belum cukup bisnis serupa untuk menampilkan ini secara anonim (perlu minimal {min}).",
+    "participants": "{count} berminat",
+    "joinGroupBuy": "Nyatakan minat"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "subtitle": "Bahasa, format, privasi, dan kepatuhan.",
+    "localization": "Bahasa & format",
+    "interfaceLanguage": "Bahasa antarmuka",
+    "aiAdvisorLanguage": "Bahasa penasihat AI",
+    "country": "Negara / wilayah",
+    "currency": "Mata uang",
+    "numberFormat": "Format angka",
+    "dateFormat": "Format tanggal",
+    "formatPreview": "Pratinjau",
+    "previewCurrency": "Mata uang",
+    "previewNumber": "Angka",
+    "previewDate": "Tanggal",
+    "previewPercent": "Persen",
+    "privacy": "Privasi karyawan",
+    "permissions": "Izin",
+    "roleSimulator": "Simulator peran",
+    "roleSimulatorHint": "Pratinjau ATLAS sebagai peran lain. Ini mengubah apa yang bisa Anda lihat dan lakukan.",
+    "dataExport": "Ekspor data",
+    "compliance": "Kepatuhan",
+    "demoMode": "Mode demo",
+    "demoModeHint": "Saat aktif, tanggal ditambatkan agar data contoh tetap konsisten.",
+    "resetDemo": "Setel ulang data demo",
+    "toastReset": "Data demo disetel ulang",
+    "exportCta": "Ekspor data (JSON)",
+    "toastExport": "Ekspor data terunduh (demo)",
+    "safetyBuffer": "Batas aman kas",
+    "languageIndependentNote": "Bahasa antarmuka dan penasihat AI saling bebas. Misalnya: jelajah dalam bahasa Indonesia sementara ATLAS menulis laporan dalam bahasa Inggris."
+  },
+  "roles": {
+    "owner": "Pemilik",
+    "manager": "Manajer",
+    "accountant": "Akuntan",
+    "employee": "Karyawan",
+    "viewer": "Pengamat"
+  },
+  "compliance": {
+    "disclaimer": "ATLAS menyediakan informasi bantuan bisnis dan tidak menggantikan akuntan bersertifikat, pengacara, penasihat pajak, atau penasihat keuangan berlisensi."
+  },
+  "pricing": {
+    "title": "Paket",
+    "free": "Gratis",
+    "pro": "Pro",
+    "business": "Bisnis",
+    "currentPlan": "Paket saat ini",
+    "upgrade": "Tingkatkan",
+    "freeDesc": "Arus kas harian, buku kas, dan jawaban AI untuk satu pemilik.",
+    "proDesc": "Pusat Aksi, struk, jadwal, dan laporan bulanan untuk tim kecil.",
+    "businessDesc": "Izin multi-peran, jaringan rekan, dan ekspor data untuk tim yang berkembang."
+  },
+  "validation": {
+    "required": "Kolom ini wajib diisi",
+    "positiveAmount": "Jumlah harus lebih besar dari nol",
+    "invalidNumber": "Masukkan angka yang valid"
+  },
+  "empty": {
+    "generic": "Belum ada apa-apa di sini."
+  },
+  "country": {
+    "CN": "Tiongkok",
+    "TW": "Taiwan",
+    "US": "Amerika Serikat",
+    "JP": "Jepang",
+    "KR": "Korea Selatan",
+    "MX": "Meksiko",
+    "BR": "Brasil",
+    "IN": "India",
+    "ID": "Indonesia",
+    "TH": "Thailand",
+    "VN": "Vietnam",
+    "AE": "Uni Emirat Arab",
+    "SA": "Arab Saudi",
+    "GB": "Inggris Raya",
+    "SG": "Singapura"
+  },
+  "ai": {
+    "answer": {
+      "finance": "Hari ini Anda meraih {revenue} dan mengeluarkan {expenses}, jadi tersisa sekitar {profit}.",
+      "cashflowSafe": "Anda bisa menutup periode ke depan. Kas terendah diproyeksikan {lowest}, di atas batas aman {safety}.",
+      "cashflowRisk": "Kas segera menipis. Kas diproyeksikan turun ke {lowest}, di bawah batas aman {safety}.",
+      "customers": "{count} pelanggan tampak berisiko pergi dan layak dihubungi.",
+      "staffing": "{present} dari {total} sudah absen. Untuk besok, sekitar {suggested} pada shift tampak pas.",
+      "draft": "Saya menyusun pesan untuk Anda tinjau sebelum apa pun dikirim.",
+      "report": "Saya bisa menyusun laporan bulanan berbahasa sederhana untuk Anda.",
+      "peer": "Beginilah perbandingan Anda dengan bisnis serupa, secara anonim.",
+      "compliance": "Ini panduan umum — mohon konfirmasi detailnya dengan profesional yang berkualifikasi.",
+      "unknown": "Saya belum yakin. Coba tanya tentang pendapatan, arus kas, pelanggan, atau staf."
+    },
+    "ev": {
+      "todayRevenue": "Pendapatan hari ini: {amount}",
+      "todayExpenses": "Pengeluaran hari ini: {amount}",
+      "monthRevenue": "Pendapatan sejauh ini: {amount}",
+      "safetyLine": "Batas aman: {amount}",
+      "lowestCash": "Kas terendah diproyeksikan: {amount}",
+      "openReceivables": "{count} piutang terbuka totalnya {amount}",
+      "customerVisits": "{name}: {visits} kunjungan",
+      "clockedIn": "{name} sudah absen",
+      "notClockedIn": "{name} belum absen",
+      "draftFirst": "Tidak ada yang dikirim sampai Anda setujui drafnya.",
+      "reportScope": "Mencakup pendapatan, biaya, arus kas, tim, dan pelanggan.",
+      "anonymity": "Semua perbandingan diagregasi dan dianonimkan."
+    },
+    "risk": {
+      "negativeProfit": "Hari ini Anda mengeluarkan lebih banyak dari yang diperoleh.",
+      "cashflowDanger": "Kas bisa turun di bawah batas aman dalam rentang prakiraan.",
+      "churn": "Beberapa pelanggan loyal belum kembali belakangan ini."
+    },
+    "next": {
+      "reviewMonth": "Bandingkan biaya bulan ini dengan bulan lalu.",
+      "collect": "Tagih piutang lewat tempo dulu — paling banyak melepas kas.",
+      "winback": "Kirim pesan tarik kembali yang ramah ke pelanggan setia yang berisiko.",
+      "schedule": "Sesuaikan jadwal besok dengan permintaan yang diharapkan.",
+      "generateReport": "Buat laporan bulanan untuk gambaran lengkap."
+    },
+    "tools": {
+      "getRevenueSummary": "Meringkas pendapatan untuk rentang tanggal.",
+      "getExpenseSummary": "Meringkas pengeluaran per kategori.",
+      "getCashflowForecast": "Memproyeksikan kas untuk hari-hari mendatang.",
+      "getReceivables": "Mendaftar piutang, opsional per status.",
+      "getPayables": "Mendaftar utang, opsional per status.",
+      "getTopProducts": "Memeringkat produk per pendapatan atau volume.",
+      "getEmployeeAttendance": "Cek siapa yang absen hari ini.",
+      "getCustomerRiskSegments": "Mengelompokkan pelanggan per risiko churn.",
+      "draftMessage": "Menyusun pesan untuk ditinjau pemilik.",
+      "createTask": "Membuat tugas atau pengingat.",
+      "logAiRecommendation": "Mencatat rekomendasi AI di log audit."
+    }
+  },
+  "mock": {
+    "tx": {
+      "lunchService": "Layanan makan siang",
+      "takeaway": "Pesanan bawa pulang",
+      "cateringDeposit": "DP katering",
+      "freshProduce": "Bahan segar",
+      "gasRefill": "Isi ulang gas",
+      "deliveryFee": "Biaya platform antar",
+      "dailySales": "Penjualan harian",
+      "supplierDelivery": "Kiriman pemasok",
+      "weekendSales": "Penjualan akhir pekan",
+      "monthlyRent": "Sewa bulanan"
+    },
+    "receivable": {
+      "companyCatering": "Pesanan katering perusahaan",
+      "eventBalance": "Sisa tagihan acara"
+    },
+    "payable": {
+      "meatSupplier": "Tagihan pemasok daging",
+      "vegWholesaler": "Tagihan grosir sayur",
+      "payroll": "Gaji staf"
+    },
+    "vendor": {
+      "meatSupplier": "Prime Meats",
+      "vegWholesaler": "Grosir GreenLeaf",
+      "payroll": "Gaji"
+    },
+    "customer": {
+      "hongtuTech": "Hongtu Tech",
+      "mrWang": "Pak Wang",
+      "lilyChen": "Lily Chen",
+      "zhangFamily": "Keluarga Zhang",
+      "oldTownOffice": "Kawasan Kantor Kota Lama"
+    },
+    "employee": {
+      "chefLiu": "Chef Liu",
+      "mei": "Mei",
+      "jun": "Jun",
+      "auntZhao": "Bibi Zhao",
+      "kevin": "Kevin"
+    },
+    "product": {
+      "beefNoodles": "Mie sapi",
+      "dumplings": "Pangsit",
+      "coldDrinks": "Minuman dingin"
+    },
+    "action": {
+      "collectPayment": {
+        "title": "Tagih {count} piutang lewat tempo",
+        "reason": "{amount} sudah lewat tempo dan mengikat kas yang bisa Anda pakai sekarang.",
+        "draft": "Halo, sekadar pengingat ramah bahwa tagihan sebesar {amount} sudah lewat tempo. Boleh diinfokan kapan pembayaran tiba? Terima kasih!",
+        "ev1": "1 piutang telah melewati tanggal jatuh tempo.",
+        "ev2": "Menagih melepas {amount} modal kerja."
+      },
+      "winback": {
+        "title": "Tarik kembali pelanggan setia yang menghilang",
+        "reason": "Pelanggan dengan {visits} kunjungan belum kembali selama {days} hari.",
+        "draft": "Halo! Kami merindukan Anda. Mampir minggu ini dan nikmati sedikit hadiah dari kami — kami senang bertemu Anda lagi.",
+        "ev1": "Kunjungan terakhir {days} hari lalu."
+      },
+      "delayPayment": {
+        "title": "Minta perpanjangan singkat ke pemasok",
+        "reason": "Menunda {amount} selama {days} hari meredakan hari yang ketat.",
+        "draft": "Halo, kami menghargai kemitraan ini. Bisakah pembayaran {amount} ini diperpanjang {days} hari? Kami akan konfirmasi tanggal baru secara tertulis.",
+        "ev1": "Pembayaran {amount} jatuh pada hari kas ketat."
+      }
+    },
+    "insight": {
+      "tightCash": {
+        "title": "Kas menipis minggu depan",
+        "summary": "Pembayaran pemasok dan gaji bertumpuk dengan piutang lewat tempo.",
+        "ev1": "Total piutang lewat tempo {amount}.",
+        "ev2": "Sebuah utang jatuh tempo di minggu yang sama.",
+        "ev3": "Gaji dijadwalkan dalam rentang ini."
+      }
+    },
+    "network": {
+      "groupBuy": {
+        "oil": "Pembelian minyak goreng dalam jumlah besar",
+        "coldChain": "Pengiriman rantai dingin bersama"
+      }
+    }
+  }
+}
