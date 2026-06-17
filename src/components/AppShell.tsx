@@ -28,7 +28,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   // Permission-aware navigation: only show routes this role can access.
   const visibleItems = NAV_ITEMS.filter((i) => canAccessRoute(role, i.href));
   const primaryItems = visibleItems.filter((i) => i.primary);
-  const demoMode = business?.demoMode ?? false;
+  const demoMode = business?.mode !== "production";
 
   return (
     <div className="min-h-screen bg-cream">

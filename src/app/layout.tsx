@@ -4,8 +4,9 @@ import { I18nProvider } from "@/i18n/I18nProvider";
 import { ToastProvider } from "@/components/ui/Toast";
 
 export const metadata: Metadata = {
-  title: "ATLAS — AI business operating system",
-  description: "The AI business operating system for small businesses.",
+  title: "ATLAS CashOps — small-business cashflow early-warning",
+  description:
+    "Forecast the next 13 weeks of cash, see who to chase first, and turn it into auditable, approvable actions.",
 };
 
 export const viewport: Viewport = {

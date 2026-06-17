@@ -1,38 +1,51 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { ShieldCheck, Inbox } from "lucide-react";
+import { useMemo, useState } from "react";
+import { Inbox, ShieldCheck } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
 import { useAppStore } from "@/lib/store";
-import { PageHeader, Card, EmptyState } from "@/components/ui/primitives";
-import { ActionCard } from "@/components/ActionCard";
-import type { AiActionStatus } from "@/lib/types";
+import { PageHeader, Card, EmptyState, Badge } from "@/components/ui/primitives";
+import { DraftActionCard } from "@/components/cashops/DraftActionCard";
+import type { ActionStatus } from "@/lib/cashops/domain";
 
-type Filter = "all" | AiActionStatus;
+type Filter = "all" | ActionStatus;
+
+const FILTERS: Filter[] = ["all", "draft", "approved", "executed", "dismissed"];
+
+const FILTER_LABEL_KEY: Record<Filter, string> = {
+  all: "actions.filterAll",
+  draft: "actions.filterDraft",
+  approved: "actions.filterApproved",
+  executed: "actions.filterExecuted",
+  dismissed: "actions.filterDismissed",
+};
 
 export default function ActionsPage() {
   const { t } = useI18n();
   const actions = useAppStore((s) => s.actions);
   const [filter, setFilter] = useState<Filter>("all");
 
-  const filters: Filter[] = ["all", "draft", "approved", "executed", "dismissed"];
-
   const filtered = useMemo(
     () => (filter === "all" ? actions : actions.filter((a) => a.status === filter)),
     [actions, filter]
   );
 
+  const pendingCount = useMemo(() => actions.filter((a) => a.status === "draft").length, [actions]);
+
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto flex max-w-3xl flex-col gap-5">
       <PageHeader title={t("actions.title")} subtitle={t("actions.subtitle")} />
 
-      <Card className="mb-4 flex items-start gap-3 border border-accent/15 bg-accent/5 shadow-none">
+      <Card className="flex items-start gap-3 border border-accent/15 bg-accent/5 shadow-none">
         <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-        <p className="text-sm leading-snug text-ink/70">{t("actions.draftFirst")}</p>
+        <div className="flex flex-col gap-1">
+          <p className="text-sm font-medium leading-snug text-ink">{t("actions.humanInLoop")}</p>
+          <p className="text-xs leading-snug text-ink/60">{t("actions.draftFirst")}</p>
+        </div>
       </Card>
 
-      <div className="mb-5 flex flex-wrap gap-2">
-        {filters.map((f) => (
+      <div className="flex flex-wrap items-center gap-2">
+        {FILTERS.map((f) => (
           <button
             key={f}
             onClick={() => setFilter(f)}
@@ -40,9 +53,14 @@ export default function ActionsPage() {
               filter === f ? "bg-ink text-white" : "bg-white text-ink/60 hover:bg-ink/5"
             }`}
           >
-            {f === "all" ? t("common.all") : t(`action.${f}`)}
+            {t(FILTER_LABEL_KEY[f])}
           </button>
         ))}
+        {pendingCount > 0 && (
+          <Badge tone="accent" className="ms-auto">
+            {t("actions.pendingCount", { count: pendingCount })}
+          </Badge>
+        )}
       </div>
 
       {filtered.length === 0 ? (
@@ -51,9 +69,9 @@ export default function ActionsPage() {
           <EmptyState message={t("actions.empty")} />
         </div>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="flex flex-col gap-4">
           {filtered.map((a) => (
-            <ActionCard key={a.id} action={a} />
+            <DraftActionCard key={a.id} action={a} />
           ))}
         </div>
       )}

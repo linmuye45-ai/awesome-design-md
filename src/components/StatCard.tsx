@@ -19,12 +19,13 @@ export function StatCard({
   meaning?: string;
   deltaLabel?: string;
   deltaPositive?: boolean;
-  tone?: "neutral" | "accent" | "success" | "danger";
+  tone?: "neutral" | "accent" | "success" | "warning" | "danger";
 }) {
   const tones = {
     neutral: "text-ink",
     accent: "text-accent",
     success: "text-success",
+    warning: "text-warning",
     danger: "text-danger",
   };
   return (

@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "ATLAS",
+    "name": "ATLAS CashOps",
     "tagline": "ระบบปฏิบัติการธุรกิจด้วย AI สำหรับธุรกิจขนาดเล็กทั่วโลก"
   },
   "common": {
@@ -23,18 +23,15 @@
     "today": "วันนี้",
     "amount": "จำนวนเงิน",
     "date": "วันที่",
-    "category": "หมวดหมู่",
     "status": "สถานะ",
-    "description": "รายละเอียด",
     "notes": "บันทึก",
     "name": "ชื่อ",
     "role": "บทบาท",
-    "phone": "โทรศัพท์",
-    "email": "อีเมล",
     "draft": "ฉบับร่าง",
     "send": "ส่ง",
     "generate": "สร้าง",
     "viewAll": "ดูทั้งหมด",
+    "viewEvidence": "View evidence",
     "comingSoon": "เร็ว ๆ นี้",
     "mock": "เดโม",
     "high": "สูง",
@@ -45,106 +42,288 @@
     "optional": "ไม่บังคับ",
     "hidden": "ซ่อน",
     "restricted": "จำกัดสิทธิ์",
-    "download": "ดาวน์โหลด"
+    "download": "ดาวน์โหลด",
+    "days": "{count} days",
+    "locked": "Locked",
+    "upgrade": "Upgrade",
+    "week": "Week {n}"
   },
   "nav": {
-    "today": "วันนี้",
-    "ask": "ถาม ATLAS",
-    "ledger": "บัญชี",
-    "capture": "ใบเสร็จ",
-    "cashflow": "กระแสเงินสด",
+    "dashboard": "Dashboard",
+    "forecast": "Forecast",
+    "collections": "Collections",
+    "payables": "Payables",
+    "advisor": "AI Advisor",
     "actions": "ศูนย์การกระทำ",
-    "team": "ทีม",
-    "schedule": "ตารางงาน",
-    "customers": "ลูกค้า",
-    "reports": "รายงาน",
-    "network": "เครือข่ายธุรกิจ",
+    "audit": "Audit & Trust",
+    "dataSources": "Data sources",
+    "pricing": "Plans",
     "settings": "ตั้งค่า"
   },
   "demo": {
-    "banner": "ข้อมูลเดโมอ้างอิง ณ {date} รายการใหม่จะใช้เวลาจริงปัจจุบัน"
+    "banner": "ข้อมูลเดโมอ้างอิง ณ {date} รายการใหม่จะใช้เวลาจริงปัจจุบัน",
+    "badge": "Demo mode",
+    "production": "Production mode"
+  },
+  "mode": {
+    "demoTitle": "Demo mode",
+    "demoBody": "Explore with realistic sample data. Nothing is sent and no real systems are touched.",
+    "productionTitle": "Production mode",
+    "productionBody": "Connect your accounting, payments and commerce sources. ATLAS reads them to forecast cash and draft actions — it never sends or pays on its own."
   },
   "onboarding": {
     "title": "ยินดีต้อนรับสู่ ATLAS",
     "subtitle": "ตั้งค่าได้ใน 1 นาที ATLAS จะเริ่มทำงานให้คุณตั้งแต่วันนี้",
-    "stepBusinessType": "คุณทำธุรกิจประเภทใด?",
+    "stepIndustry": "What kind of business do you run?",
     "stepBusinessName": "ร้านของคุณชื่ออะไร?",
     "businessNamePlaceholder": "เช่น ร้านก๋วยเตี๋ยวซันไรส์",
-    "stepCountry": "ธุรกิจของคุณอยู่ที่ไหน?",
-    "stepCurrency": "คุณใช้สกุลเงินอะไร?",
-    "stepUiLanguage": "ภาษาหน้าจอ",
-    "stepAiLanguage": "ภาษาที่ปรึกษา AI",
-    "stepEmployees": "มีกี่คนที่ทำงานด้วยกัน?",
-    "useDemoData": "เริ่มด้วยข้อมูลเดโมเพื่อดูภาพรวม",
-    "useDemoDataHint": "คุณล้างข้อมูลได้ทุกเมื่อในหน้าตั้งค่า",
-    "type": {
-      "restaurant": "อาหารและเครื่องดื่ม",
-      "retail": "ค้าปลีกและหน้าร้าน",
-      "beauty": "ความงามและร้านเสริมสวย",
-      "education": "การศึกษาและฝึกอบรม",
-      "local_service": "บริการในพื้นที่",
-      "freelance": "ทีมฟรีแลนซ์",
-      "other": "อื่น ๆ"
-    },
-    "employeeRange": {
-      "1-5": "1–5 คน",
-      "6-15": "6–15 คน",
-      "16-30": "16–30 คน",
-      "31-50": "31–50 คน",
-      "50+": "มากกว่า 50 คน"
-    },
+    "stepDataSource": "Where does your money data live?",
+    "dataSourceHint": "Pick one or more. You can add the rest later.",
+    "stepCashSettings": "Set your cash guardrails",
+    "stepLanguages": "Language preferences",
+    "cashSafetyLine": "Cash safety line",
+    "cashSafetyLineHint": "ATLAS warns you before cash dips below this.",
+    "payrollDay": "Payroll day of month",
+    "rentDay": "Rent day of month",
+    "taxReserveRate": "Tax reserve rate",
+    "defaultPaymentMethod": "Default payment method",
+    "uiLanguage": "Interface language",
+    "aiLanguage": "AI advisor language",
+    "chooseMode": "Choose how to start",
     "finishCta": "เริ่มใช้ ATLAS",
-    "step": "ขั้นที่ {current} จาก {total}"
+    "step": "ขั้นที่ {current} จาก {total}",
+    "industry": {
+      "contractor": "Contractor / Trades",
+      "agency": "Agency / Services",
+      "clinic": "Clinic / Practice",
+      "wholesale": "Wholesale / Distribution",
+      "retail": "Retail",
+      "restaurant": "Restaurant / Food",
+      "ecommerce": "E-commerce"
+    }
   },
   "dashboard": {
     "title": "วันนี้",
     "greeting": "ภาพรวมธุรกิจของ {name}",
-    "aiJudgment": "บทวิเคราะห์ของ ATLAS วันนี้",
-    "judgmentSafe": "วันนี้คุณมีรายรับ {revenue} ใช้จ่าย {expenses} เหลือกำไร {profit} กระแสเงินสด 7 วันข้างหน้าปลอดภัย รักษาโมเมนตัมนี้ไว้",
-    "judgmentWatch": "วันนี้คุณมีรายรับ {revenue} ใช้จ่าย {expenses} เหลือกำไร {profit} จะมีวันที่เงินตึงใน 7 วันข้างหน้า ดูการกระทำที่ควรทำก่อนด้านล่าง",
-    "judgmentDanger": "วันนี้คุณมีรายรับ {revenue} ใช้จ่าย {expenses} เหลือกำไร {profit} เงินสดอาจต่ำกว่าเส้นปลอดภัย {safety} ลงมือทันที",
-    "todayRevenue": "รายรับวันนี้",
-    "todayExpenses": "รายจ่ายวันนี้",
-    "estimatedGrossProfit": "กำไรขั้นต้นโดยประมาณ",
-    "availableCash": "เงินสดพร้อมใช้",
-    "cashflowRisk": "ความเสี่ยงกระแสเงินสด 7 วัน",
-    "vsYesterday": "เทียบกับเมื่อวาน",
+    "headlineSafe": "Your cash holds above the safety line for the next 13 weeks. Lowest point is {lowest}.",
+    "headlineWatch": "Cash gets tight in the weeks ahead. Lowest projected cash is {lowest}, near your safety line of {safety}.",
+    "headlineRisk": "Cash is projected to fall below your safety line of {safety}, bottoming at {lowest}. Act on the top actions now.",
+    "cashAtRisk": "Cash at risk",
+    "expectedRecovered": "Expected recoverable cash",
+    "daysRunway": "Days of cash runway",
+    "dso": "Days sales outstanding",
+    "overdueAr": "Overdue receivables",
+    "upcomingAp": "Upcoming payables (14d)",
+    "actionsApproved": "Actions approved",
+    "actionsExecuted": "Actions executed",
+    "forecastAccuracy": "Forecast accuracy",
     "topActions": "3 การกระทำสำคัญวันนี้",
-    "askPlaceholder": "ถาม ATLAS เกี่ยวกับธุรกิจของคุณ…",
-    "voiceHint": "พูดเพื่อป้อน",
-    "quickActions": "ทางลัด",
-    "quickAddTransaction": "บันทึก",
-    "quickCapture": "สแกนใบเสร็จ",
-    "quickCollect": "ทวงเงิน",
-    "quickSchedule": "จัดตารางงาน",
-    "meaningProfit": "เงินที่เหลือจริงวันนี้หลังหักค่าใช้จ่าย",
-    "meaningCash": "เงินที่ใช้ได้ทันทีตอนนี้",
-    "riskSafe": "กระแสเงินสด 7 วันข้างหน้าดูปลอดภัย",
-    "riskWatch": "ระวัง มีวันที่เงินตึงกำลังมา",
-    "riskDanger": "ต้องลงมือ เงินสดอาจต่ำกว่าเส้นปลอดภัย",
-    "summaryOnly": "แสดงเฉพาะสรุปแบบจำกัดตามบทบาทของคุณ"
+    "noActions": "No actions need your attention right now.",
+    "viewForecast": "Open 13-week forecast",
+    "summaryOnly": "แสดงเฉพาะสรุปแบบจำกัดตามบทบาทของคุณ",
+    "runwayMeaning": "How long your cash lasts at the current trajectory.",
+    "dsoMeaning": "Average days to collect an invoice. Lower is healthier."
+  },
+  "forecast": {
+    "title": "13-week cash forecast",
+    "subtitle": "Deterministic projection from your bank, AR, AP, payroll and recurring costs.",
+    "scenario": "Scenario",
+    "lowestCash": "Lowest projected cash",
+    "lowestWeek": "Lowest-cash week",
+    "breachDate": "Safety-line breach",
+    "noBreach": "No breach in the next 13 weeks",
+    "safetyLine": "Safety line",
+    "startingCash": "Starting cash",
+    "riskLevel": "Risk level",
+    "confidence": "Confidence",
+    "topDrivers": "Top 5 cash drivers",
+    "weekColumn": "Week",
+    "openingCash": "Opening",
+    "inflow": "Inflow",
+    "outflow": "Outflow",
+    "closingCash": "Closing",
+    "evidenceTitle": "Evidence for {week}",
+    "evidenceEmpty": "No line items this week.",
+    "clickHint": "Click any week to see the line items behind it.",
+    "scenarios": {
+      "base": "Base case",
+      "late_collections": "Late collections",
+      "delayed_payables": "Delayed payables",
+      "payroll_heavy": "Payroll-heavy",
+      "sales_downturn": "Sales downturn"
+    },
+    "risk": {
+      "safe": "Safe",
+      "watch": "Watch",
+      "at_risk": "At risk",
+      "critical": "Critical"
+    },
+    "confidenceLevel": {
+      "low": "Low confidence",
+      "medium": "Medium confidence",
+      "high": "High confidence"
+    },
+    "ev": {
+      "operatingRevenue": "Operating revenue (week {week})",
+      "operatingCost": "Operating costs (week {week})",
+      "taxReserve": "Tax reserve (week {week})",
+      "receivable": "Collection: {name} · {invoice}",
+      "payable": "Bill: {name}",
+      "payroll": "Payroll",
+      "rent": "Rent",
+      "subscription": "Software subscriptions",
+      "loan": "Loan repayment",
+      "extraPayroll": "Extra payroll cycle"
+    }
+  },
+  "collections": {
+    "title": "Receivables & collections",
+    "subtitle": "See who owes you, who to chase first, and draft the message — you stay in control.",
+    "aging": "AR aging",
+    "priorityTargets": "Priority collection targets",
+    "noTargets": "No overdue receivables. Nicely collected.",
+    "expectedRecovery": "Expected recovery",
+    "daysOverdue": "{days} days overdue",
+    "promiseToPay": "Promise to pay",
+    "lastContacted": "Last contacted",
+    "neverContacted": "Not yet contacted",
+    "markContacted": "Mark contacted",
+    "draftMessage": "Draft collection message",
+    "tone": "Tone",
+    "channel": "Channel",
+    "score": "Priority",
+    "invoice": "Invoice {invoice}",
+    "bucket": {
+      "current": "Current",
+      "1_30": "1-30 days",
+      "31_60": "31-60 days",
+      "61_90": "61-90 days",
+      "90_plus": "90+ days"
+    },
+    "toneLabel": {
+      "friendly": "Friendly",
+      "firm": "Firm",
+      "final_notice": "Final notice"
+    },
+    "channelLabel": {
+      "email": "Email",
+      "sms": "SMS",
+      "whatsapp": "WhatsApp"
+    },
+    "reason": {
+      "largeAmount": "Large balance of {amount}",
+      "longOverdue": "{days} days overdue",
+      "overdue": "{days} days past due",
+      "slowPayer": "Historically pays {days} days late",
+      "recoverable": "High likelihood of recovery",
+      "atRiskRecovery": "Recovery at risk — act soon"
+    },
+    "draft": {
+      "title": "Collect {amount} from {name}",
+      "rationale": "Invoice is {days} days overdue; recovering it frees up {amount} of working cash."
+    },
+    "body": {
+      "friendly": "Hi {name}, just a friendly reminder that invoice {invoice} for {amount} is now {days} days past due. Could you let us know when payment will arrive? Thank you!",
+      "firm": "Hi {name}, invoice {invoice} for {amount} is {days} days overdue. Please arrange payment within 3 business days or reply with a payment date so we can update our records.",
+      "final_notice": "Hi {name}, this is a final notice for invoice {invoice} of {amount}, now {days} days overdue. Please settle within 48 hours to avoid further collection steps. Contact us immediately if there is an issue."
+    },
+    "ev": {
+      "invoice": "Invoice {invoice}: {amount} outstanding",
+      "overdue": "{days} days past due",
+      "expectedRecovery": "Expected recovery: {amount}"
+    },
+    "toastContacted": "Marked as contacted",
+    "toastDrafted": "Collection draft added to Action Center"
+  },
+  "payables": {
+    "title": "Payables & vendor negotiation",
+    "subtitle": "Classify what must be paid, what can wait, and draft negotiation requests.",
+    "aging": "AP aging",
+    "upcoming": "Upcoming bills",
+    "deferrable": "Cash you could defer",
+    "treatment": "Treatment",
+    "dueIn": "Due in {days} days",
+    "overdueBy": "{days} days overdue",
+    "suggestDelay": "Suggest {days}-day delay",
+    "draftNegotiation": "Draft negotiation",
+    "noPayables": "No open bills.",
+    "bill": "Bill {bill}",
+    "treatmentLabel": {
+      "must_pay": "Must pay",
+      "can_delay": "Can delay",
+      "can_negotiate": "Can negotiate"
+    },
+    "reason": {
+      "payroll": "Payroll — protect your team",
+      "rent": "Rent — keep your premises",
+      "tax": "Tax reserve — avoid penalties",
+      "inflexible": "Vendor has fixed terms",
+      "flexible": "Flexible vendor — room to delay",
+      "largeFlexible": "Large flexible bill of {amount} — negotiate installments",
+      "overdue": "{days} days overdue",
+      "dueSoon": "Due in {days} days"
+    },
+    "draft": {
+      "delayTitle": "Delay {amount} to {name}",
+      "installmentTitle": "Negotiate installments with {name}",
+      "rationale": "Deferring {amount} by {days} days smooths a tight cash week."
+    },
+    "body": {
+      "delay": "Hi {name}, we value our partnership. Could we extend bill {bill} for {amount} by {days} days? We'll confirm the new date in writing and keep everything else on schedule.",
+      "installment": "Hi {name}, regarding bill {bill} for {amount}: could we split this into installments over the next {days} days? We want to keep paying you reliably while managing a short cash crunch."
+    },
+    "ev": {
+      "bill": "Bill {bill}: {amount}",
+      "due": "Due in {days} days"
+    },
+    "toastDrafted": "Negotiation draft added to Action Center"
+  },
+  "advisor": {
+    "title": "AI Advisor",
+    "subtitle": "Ask about cash, collections or payables. Every answer is grounded in your data.",
+    "placeholder": "e.g. What's my cash runway? Who should I chase first?",
+    "answer": "Answer",
+    "evidence": "Evidence",
+    "risk": "Risk to watch",
+    "recommendation": "Recommended action",
+    "draftActions": "Draft actions",
+    "usedTools": "Tools used",
+    "missingData": "Missing data",
+    "addDraft": "Create draft",
+    "thinking": "ATLAS is checking your data...",
+    "clearChat": "Clear chat",
+    "you": "You",
+    "advisorLanguage": "Advisor language",
+    "structureNote": "Every answer follows a fixed structure: direct answer, evidence, risk, recommended action, and draft actions — grounded only in your connected data.",
+    "sample": {
+      "runway": "What's my cash runway?",
+      "collections": "Who should I chase for payment first?",
+      "payables": "Which bills can I delay?",
+      "draft": "Draft a payment reminder for my biggest overdue invoice",
+      "metrics": "What's my DSO and cash at risk?"
+    }
   },
   "action": {
     "reason": "เหตุผล",
     "impact": "ผลที่คาดว่าจะได้",
     "confidence": "ความมั่นใจ",
-    "amountInvolved": "จำนวนที่เกี่ยวข้อง",
     "draft": "ฉบับร่าง",
     "approved": "อนุมัติแล้ว",
     "executed": "ดำเนินการแล้ว",
     "dismissed": "ปิดทิ้งแล้ว",
     "draftReady": "ฉบับร่างพร้อมให้ตรวจ",
     "evidence": "หลักฐาน",
+    "channel": "Channel",
+    "tone": "Tone",
     "executeConfirmTitle": "ดำเนินการกระทำนี้หรือไม่?",
     "executeConfirmBody": "ATLAS จะบันทึกการกระทำนี้และเก็บลงบันทึกการตรวจสอบ ในเดโมนี้จะไม่มีการส่งจริง",
     "type": {
       "collect_payment": "ทวงหนี้",
       "delay_payment": "เลื่อนจ่ายซัพพลายเออร์",
       "customer_winback": "ดึงลูกค้ากลับ",
-      "review_reply": "ตอบรีวิว",
       "schedule_adjustment": "ปรับตารางงาน",
+      "purchase_deferral": "Defer purchase",
       "supplier_negotiation": "เจรจาซัพพลายเออร์",
-      "inventory_reminder": "เติมสต็อก",
       "monthly_review": "ทบทวนรายเดือน"
     }
   },
@@ -153,10 +332,12 @@
     "subtitle": "ATLAS ร่างให้ คุณอนุมัติ คุณคุมเกมเสมอ",
     "empty": "ไม่มีการกระทำค้างอยู่ จัดการครบแล้ว",
     "draftFirst": "ATLAS เตรียมฉบับร่างให้ก่อน ไม่มีอะไรถูกส่งจนกว่าคุณจะอนุมัติ",
+    "humanInLoop": "Human-in-the-loop: every message, payment and change needs your confirmation.",
     "toastApproved": "อนุมัติการกระทำแล้ว",
     "toastExecuted": "ดำเนินการแล้ว (เดโม)",
     "toastDismissed": "ปิดการกระทำแล้ว",
     "toastDrafted": "เพิ่มฉบับร่างลงศูนย์การกระทำแล้ว",
+    "toastMetered": "You've hit your monthly action limit. Upgrade for unlimited actions.",
     "filterAll": "ทั้งหมด",
     "filterDraft": "ฉบับร่าง",
     "filterApproved": "อนุมัติแล้ว",
@@ -164,219 +345,124 @@
     "filterDismissed": "ปิดทิ้งแล้ว",
     "pendingCount": "มี {count} ฉบับร่างรอดำเนินการ"
   },
-  "ask": {
-    "title": "ถาม ATLAS",
-    "subtitle": "ถามเรื่องเงิน ลูกค้า พนักงาน และสิ่งที่ควรทำต่อไป",
-    "placeholder": "เช่น วันนี้ได้เงินเท่าไร?",
-    "voicePlaceholder": "พูดเพื่อป้อน (เร็ว ๆ นี้)",
-    "advisorLanguage": "ภาษาที่ปรึกษา AI",
-    "answer": "คำตอบ",
-    "evidence": "อ้างอิงจากข้อมูล",
-    "risk": "ความเสี่ยงที่ควรระวัง",
-    "nextSteps": "ขั้นตอนถัดไปที่แนะนำ",
-    "actionsLabel": "ลงมือทำ",
-    "suggested": "ลองถามดู",
-    "thinking": "ATLAS กำลังคิด…",
-    "usedTools": "เครื่องมือที่ใช้",
-    "missingData": "ข้อมูลที่ขาด",
-    "clearChat": "ล้างแชต",
-    "you": "คุณ",
-    "samples": {
-      "revenue": "วันนี้ได้เงินเท่าไร?",
-      "profitDrop": "ทำไมกำไรเดือนนี้ลดลง?",
-      "payroll": "สัปดาห์หน้าจ่ายเงินเดือนไหวไหม?",
-      "churn": "ลูกค้าคนไหนกำลังจะหายไป?",
-      "draft": "ช่วยร่างข้อความทวงเงินให้หน่อย",
-      "staffing": "พรุ่งนี้ควรจัดคนกี่คน?"
-    }
+  "audit": {
+    "title": "Audit & trust",
+    "subtitle": "Every action is logged. Your data, your control.",
+    "auditLog": "Audit log",
+    "auditEmpty": "No audit entries yet.",
+    "actor": "Actor",
+    "actionCol": "Action",
+    "target": "Target",
+    "time": "Time",
+    "dataControls": "Your data controls",
+    "exportData": "Export all data (JSON)",
+    "deleteData": "Delete all data",
+    "deleteConfirm": "This permanently clears this business's data in the demo. Continue?",
+    "privacy": "Privacy & redaction",
+    "privacyBody": "Sensitive financial detail is redacted for roles without permission. Production connectors use read-only access scopes.",
+    "redactionNote": "Amounts are redacted for your role.",
+    "toastExported": "Data exported (mock download)",
+    "toastDeleted": "Data deleted (demo reset)",
+    "disclaimerTitle": "Operational guidance only"
   },
-  "ledger": {
-    "title": "บัญชี",
-    "subtitle": "ทุกบาทที่เข้าและออก จัดเป็นระเบียบ",
-    "income": "รายรับ",
-    "expense": "รายจ่าย",
-    "receivables": "ลูกหนี้",
-    "payables": "เจ้าหนี้",
-    "addTransaction": "บันทึก",
-    "newTransaction": "รายการใหม่",
-    "type": "ประเภท",
-    "paymentMethod": "วิธีชำระเงิน",
-    "forecastCta": "ดูพยากรณ์กระแสเงินสด",
-    "noTransactions": "ยังไม่มีรายการ เพิ่มรายการแรกของคุณ",
-    "due": "ครบกำหนด: {date}",
-    "markPaid": "ทำเครื่องหมายชำระแล้ว",
-    "method": {
-      "cash": "เงินสด",
-      "card": "บัตร",
-      "bank": "โอนธนาคาร",
-      "wallet": "วอลเล็ต",
-      "other": "อื่น ๆ"
+  "dataSources": {
+    "title": "Data sources",
+    "subtitle": "Connect accounting, payments and commerce. ATLAS reads them — read-only.",
+    "connected": "Connected",
+    "notConnected": "Not connected",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "health": "Source health",
+    "lastSynced": "Last synced {date}",
+    "neverSynced": "Never synced",
+    "records": "{count} records",
+    "domains": "Feeds",
+    "statusLabel": {
+      "connected": "Connected",
+      "syncing": "Syncing",
+      "error": "Error",
+      "disconnected": "Disconnected",
+      "demo": "Demo"
     },
-    "status": {
-      "open": "ค้างอยู่",
-      "overdue": "เกินกำหนด",
-      "paid": "ชำระแล้ว"
+    "domain": {
+      "bank": "Bank balance",
+      "ar": "Receivables",
+      "ap": "Payables",
+      "sales": "Sales",
+      "payroll": "Payroll"
     },
-    "incomeCategory": {
-      "sales": "ยอดขาย",
-      "service": "รายได้บริการ",
-      "prepayment": "เงินมัดจำ",
-      "other_income": "รายรับอื่น"
+    "mockNote": "All connectors are mock adapters in this build. Each implements the same typed interface, so real APIs can be plugged in without changing the app.",
+    "premiumLocked": "Available on Pro and Managed plans."
+  },
+  "connector": {
+    "quickbooks": {
+      "name": "QuickBooks",
+      "desc": "Accounting, bank, AR and AP."
     },
-    "expenseCategory": {
-      "raw_materials": "วัตถุดิบ",
-      "rent": "ค่าเช่า",
-      "payroll": "เงินเดือน",
-      "utilities": "ค่าสาธารณูปโภค",
-      "logistics": "โลจิสติกส์",
-      "marketing": "การตลาด",
-      "platform_commission": "ค่าคอมแพลตฟอร์ม",
-      "tax": "ภาษี",
-      "other_expense": "รายจ่ายอื่น"
+    "xero": {
+      "name": "Xero",
+      "desc": "Accounting, bank, AR and AP."
     },
-    "toastAdded": "เพิ่มรายการแล้ว"
-  },
-  "capture": {
-    "title": "สแกนใบเสร็จ",
-    "subtitle": "ถ่ายรูป แล้ว ATLAS อ่านให้",
-    "uploadHint": "แตะเพื่อถ่ายภาพหรืออัปโหลดใบเสร็จ",
-    "scanning": "กำลังอ่านใบเสร็จ…",
-    "result": "ผลการอ่าน",
-    "merchant": "ร้านค้า",
-    "tax": "ภาษี",
-    "confidence": "ความมั่นใจ",
-    "lowConfidenceWarning": "ตรวจรายการที่ไฮไลต์ก่อนบันทึก",
-    "fieldLowConfidence": "ความมั่นใจต่ำ — โปรดตรวจสอบ",
-    "confirmSave": "ยืนยันและบันทึกลงบัญชี",
-    "demoCta": "ลองสแกนแบบเดโม",
-    "toastSaved": "บันทึกใบเสร็จลงบัญชีแล้ว"
-  },
-  "cashflow": {
-    "title": "พยากรณ์กระแสเงินสด",
-    "subtitle": "มองเห็นปัญหาก่อนมันมาถึง",
-    "next7": "7 วันข้างหน้า",
-    "next30": "30 วันข้างหน้า",
-    "riskDate": "วันเสี่ยง",
-    "lowestCash": "เงินสดต่ำสุดที่คาด",
-    "projectedCash": "เงินสดที่คาดการณ์",
-    "safetyLine": "เส้นปลอดภัย",
-    "impactReceivables": "ผลจากลูกหนี้",
-    "impactPayables": "ผลจากเจ้าหนี้",
-    "impactPayroll": "ผลจากเงินเดือน",
-    "suggestedAction": "การกระทำที่แนะนำ",
-    "actionCollect": "ร่างข้อความทวงเงิน",
-    "actionDelay": "ร่างขอเลื่อนชำระ",
-    "chartCash": "เงินสด",
-    "chartDay": "วัน",
-    "status": {
-      "safe": "ปลอดภัย",
-      "watch": "เฝ้าระวัง",
-      "danger": "อันตราย"
+    "square": {
+      "name": "Square",
+      "desc": "Payments and point-of-sale sales."
+    },
+    "stripe": {
+      "name": "Stripe",
+      "desc": "Online payments and receivables."
+    },
+    "shopify": {
+      "name": "Shopify",
+      "desc": "E-commerce orders and sales."
+    },
+    "csv": {
+      "name": "CSV upload",
+      "desc": "Import bank, AR and AP from spreadsheets."
+    },
+    "manual": {
+      "name": "Manual entry",
+      "desc": "Enter balances and bills by hand."
     }
   },
-  "team": {
-    "title": "ทีม",
-    "subtitle": "พนักงาน กะงาน และงาน",
-    "clockStatus": "เข้างานวันนี้",
-    "geofence": "ยินยอมตำแหน่ง",
-    "scheduleCta": "เปิดตารางงาน",
-    "privacyNotice": "การติดตามตำแหน่งและการลงเวลาด้วยพิกัดต้องได้รับความยินยอมชัดแจ้งจากพนักงาน",
-    "consentGiven": "ยินยอมแล้ว",
-    "consentMissing": "ต้องการความยินยอม",
-    "consentOwnerNote": "ความยินยอมนี้พนักงานเท่านั้นที่ให้หรือถอนได้",
-    "clockedIn": "เข้างานแล้ว",
-    "notClockedIn": "ยังไม่เข้างาน",
-    "privateRedacted": "ข้อมูลติดต่อส่วนตัวถูกซ่อนสำหรับบทบาทของคุณ",
-    "status": {
-      "active": "ทำงานอยู่",
-      "inactive": "ไม่ทำงาน"
+  "pricing": {
+    "title": "แพ็กเกจ",
+    "subtitle": "Start free for 14 days. Upgrade as your cash gets more complex.",
+    "perMonth": "/mo",
+    "priceRange": "{min}-{max}",
+    "currentPlan": "แพ็กเกจปัจจุบัน",
+    "choosePlan": "Choose plan",
+    "upgradeCta": "Upgrade to {plan}",
+    "trialBadge": "14-day free trial",
+    "usageTitle": "This month's usage",
+    "actionsUsed": "{used} of {limit} AI actions used",
+    "actionsUnlimited": "Unlimited AI actions",
+    "lockedTitle": "Premium feature",
+    "lockedBody": "This feature is available on the {plan} plan.",
+    "toastUpgraded": "Plan upgraded to {plan}",
+    "starter": {
+      "name": "Starter",
+      "tagline": "For a single owner getting cash under control.",
+      "f1": "1 business",
+      "f2": "CSV & manual data",
+      "f3": "10 AI actions / month",
+      "f4": "Cash dashboard & advisor"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "For growing teams that need real integrations.",
+      "f1": "All integrations (QuickBooks, Xero, Stripe...)",
+      "f2": "Unlimited AI actions",
+      "f3": "13-week forecast & scenarios",
+      "f4": "Team roles & permissions"
+    },
+    "managed": {
+      "name": "Managed",
+      "tagline": "For owners who want an accountant-led workflow.",
+      "f1": "Everything in Pro",
+      "f2": "Accountant workflow",
+      "f3": "Monthly business review",
+      "f4": "Advanced controls & multi-business"
     }
-  },
-  "schedule": {
-    "title": "จัดตารางงาน",
-    "subtitle": "เติมทุกกะโดยไม่ใช้จ่ายเกิน",
-    "generateCta": "สร้างตารางด้วย AI",
-    "notifyCta": "แจ้งพนักงาน",
-    "understaffed": "คนไม่พอ",
-    "conflict": "ชนกัน",
-    "ok": "ครบ",
-    "estimatedCost": "ค่าแรงต่อสัปดาห์โดยประมาณ",
-    "conflictsFound": "พบ {count} จุดที่ชนกัน",
-    "toastGenerated": "สร้างฉบับร่างตารางด้วย AI ในศูนย์การกระทำแล้ว",
-    "toastNotified": "แจ้งพนักงานแล้ว (เดโม)",
-    "days": {
-      "mon": "จ.",
-      "tue": "อ.",
-      "wed": "พ.",
-      "thu": "พฤ.",
-      "fri": "ศ.",
-      "sat": "ส.",
-      "sun": "อา."
-    }
-  },
-  "customers": {
-    "title": "ลูกค้า",
-    "subtitle": "รู้ว่าใครภักดีและใครกำลังจะไป",
-    "totalSpend": "ยอดใช้จ่ายรวม",
-    "visits": "ครั้งที่มา",
-    "lastVisit": "มาครั้งล่าสุด",
-    "winbackCta": "ร่างข้อความดึงกลับ",
-    "winbackTitle": "ข้อความดึงกลับ",
-    "winbackConfirm": "เพิ่มไปยังศูนย์การดำเนินการ",
-    "atRiskCount": "ลูกค้า {count} รายต้องการความสนใจ",
-    "segment": {
-      "high_value": "มูลค่าสูง",
-      "new": "ใหม่",
-      "at_risk": "เสี่ยงหาย",
-      "price_sensitive": "อ่อนไหวต่อราคา",
-      "dormant": "ไม่เคลื่อนไหว"
-    }
-  },
-  "reports": {
-    "title": "รายงานรายเดือน",
-    "subtitle": "บทวิเคราะห์ธุรกิจด้วยภาษาง่าย ๆ",
-    "generateCta": "สร้างรายงานเดือนนี้",
-    "exportPdf": "ส่งออก PDF",
-    "headline": "สรุปบรรทัดเดียว",
-    "headlineBody": "เดือนนี้รายได้คงที่แต่ต้นทุนสูงขึ้น รักษากำไรและเก็บลูกหนี้ที่เกินกำหนด",
-    "keyMetrics": "ตัวชี้วัดหลัก",
-    "goodNews": "ข่าวดีสามข้อ",
-    "good1": "ยอดขายสุดสัปดาห์เป็นช่องทางที่แข็งแกร่งที่สุดและยังเติบโตต่อเนื่อง",
-    "good2": "ลูกค้ามูลค่าสูงกลับมาซ้ำ ดันยอดต่อบิลให้สูงขึ้น",
-    "good3": "การสแกนใบเสร็จทำให้บัญชีเป็นปัจจุบันโดยแทบไม่ต้องลงแรง",
-    "alerts": "คำเตือนสองข้อ",
-    "alert1": "ลูกหนี้ที่เกินกำหนดกำลังล็อกเงินสดที่คุณใช้ได้ตอนนี้",
-    "alert2": "ต้นทุนวัตถุดิบสูงกว่าค่าเฉลี่ยของกลุ่มธุรกิจ",
-    "profitChange": "ทำไมกำไรจึงเปลี่ยน",
-    "profitChangeBody": "เดือนนี้ต้นทุนวัตถุดิบเพิ่มเร็วกว่ารายได้ จึงทำให้กำไรเปลี่ยนไป",
-    "cashflowRisk": "ความเสี่ยงกระแสเงินสด",
-    "cashflowRiskBody": "สัปดาห์หน้าการจ่ายซัพพลายเออร์และเงินเดือนมาพร้อมกัน ทำให้เกิดช่วงเงินตึง",
-    "teamSummary": "สรุปทีม",
-    "teamSummaryBody": "วันธรรมดาจัดคนตามความต้องการได้ดี สุดสัปดาห์บางครั้งคนไม่พอ",
-    "customerSummary": "สรุปลูกค้า",
-    "customerSummaryBody": "ลูกค้าประจำส่วนน้อยสร้างรายได้ส่วนใหญ่ มีรายหนึ่งที่เงียบไปและคุ้มที่จะดึงกลับ",
-    "mostImportant": "สิ่งสำคัญที่สุดสำหรับเดือนหน้า",
-    "mostImportantBody": "เก็บลูกหนี้ที่เกินกำหนดและเจรจาราคาวัตถุดิบใหม่",
-    "recommendedActions": "การกระทำที่แนะนำ",
-    "advisorLanguageNote": "ภาษารายงานตามภาษาที่ปรึกษา AI: {language}",
-    "toastExport": "การส่งออก PDF จะมาเร็ว ๆ นี้"
-  },
-  "network": {
-    "title": "เครือข่ายธุรกิจเดียวกัน",
-    "subtitle": "เทียบกับธุรกิจคล้ายกันแบบนิรนาม",
-    "grossMarginRange": "ช่วงอัตรากำไรขั้นต้นของกลุ่ม",
-    "yourMargin": "อัตรากำไรของคุณ",
-    "costStructure": "เทียบโครงสร้างต้นทุน",
-    "you": "คุณ",
-    "peers": "กลุ่มธุรกิจ",
-    "groupBuying": "สนใจซื้อร่วม",
-    "supplierRecs": "ซัพพลายเออร์ที่แนะนำ",
-    "industryAlerts": "เตือนภัยในอุตสาหกรรม",
-    "anonymityNotice": "ข้อมูลกลุ่มทั้งหมดถูกรวมและทำให้นิรนาม ไม่สามารถระบุธุรกิจรายใดได้",
-    "sampleSize": "อิงจากธุรกิจคล้ายกัน {count} แห่ง",
-    "kAnonymityBlocked": "ธุรกิจคล้ายกันไม่พอจะแสดงแบบนิรนาม (ต้องการอย่างน้อย {min} แห่ง)",
-    "participants": "{count} แห่งสนใจ",
-    "joinGroupBuy": "แสดงความสนใจ"
   },
   "settings": {
     "title": "ตั้งค่า",
@@ -384,210 +470,111 @@
     "localization": "ภาษาและรูปแบบ",
     "interfaceLanguage": "ภาษาหน้าจอ",
     "aiAdvisorLanguage": "ภาษาที่ปรึกษา AI",
-    "country": "ประเทศ / ภูมิภาค",
     "currency": "สกุลเงิน",
-    "numberFormat": "รูปแบบตัวเลข",
-    "dateFormat": "รูปแบบวันที่",
     "formatPreview": "ตัวอย่าง",
     "previewCurrency": "สกุลเงิน",
     "previewNumber": "ตัวเลข",
     "previewDate": "วันที่",
     "previewPercent": "เปอร์เซ็นต์",
-    "privacy": "ความเป็นส่วนตัวของพนักงาน",
-    "permissions": "สิทธิ์",
+    "cashGuardrails": "Cash guardrails",
+    "cashSafetyLine": "Cash safety line",
+    "payrollDay": "Payroll day",
+    "rentDay": "Rent day",
+    "taxReserveRate": "Tax reserve rate",
+    "mode": "Mode",
     "roleSimulator": "จำลองบทบาท",
     "roleSimulatorHint": "ดู ATLAS ในฐานะบทบาทอื่น สิ่งที่เห็นและทำได้จะเปลี่ยนไป",
-    "dataExport": "ส่งออกข้อมูล",
-    "compliance": "การปฏิบัติตามกฎ",
-    "demoMode": "โหมดเดโม",
-    "demoModeHint": "เมื่อเปิด วันที่จะถูกตรึงไว้เพื่อให้ข้อมูลตัวอย่างสอดคล้องกัน",
     "resetDemo": "รีเซ็ตข้อมูลเดโม",
     "toastReset": "รีเซ็ตข้อมูลเดโมแล้ว",
-    "exportCta": "ส่งออกข้อมูล (JSON)",
-    "toastExport": "ดาวน์โหลดข้อมูลส่งออกแล้ว (เดโม)",
-    "safetyBuffer": "เส้นปลอดภัยเงินสด",
+    "toastSaved": "Settings saved",
     "languageIndependentNote": "ภาษาหน้าจอและภาษาที่ปรึกษา AI เป็นอิสระต่อกัน เช่น ดูเป็นภาษาไทยแต่ให้ ATLAS เขียนรายงานเป็นภาษาอังกฤษ"
   },
   "roles": {
     "owner": "เจ้าของ",
-    "manager": "ผู้จัดการ",
+    "admin": "Admin",
     "accountant": "นักบัญชี",
-    "employee": "พนักงาน",
+    "manager": "ผู้จัดการ",
     "viewer": "ผู้ชม"
   },
   "compliance": {
     "disclaimer": "ATLAS ให้ข้อมูลช่วยเหลือทางธุรกิจ และไม่ใช่การทดแทนผู้สอบบัญชีรับอนุญาต ทนายความ ที่ปรึกษาภาษี หรือที่ปรึกษาการเงินที่ขึ้นทะเบียน"
   },
-  "pricing": {
-    "title": "แพ็กเกจ",
-    "free": "ฟรี",
-    "pro": "โปร",
-    "business": "ธุรกิจ",
-    "currentPlan": "แพ็กเกจปัจจุบัน",
-    "upgrade": "อัปเกรด",
-    "freeDesc": "กระแสเงินสดรายวัน บัญชี และคำตอบ AI สำหรับเจ้าของคนเดียว",
-    "proDesc": "ศูนย์การกระทำ ใบเสร็จ ตารางงาน และรายงานรายเดือนสำหรับทีมเล็ก",
-    "businessDesc": "สิทธิ์หลายบทบาท เครือข่ายธุรกิจ และส่งออกข้อมูลสำหรับทีมที่กำลังเติบโต"
+  "ai": {
+    "answer": {
+      "cashPosition": "Your bank balance is {amount}.",
+      "forecastSafe": "You're covered. Lowest projected cash is {lowest}, above your safety line of {safety}.",
+      "forecastRisk": "Cash gets tight. Projected cash dips to {lowest}, below your safety line of {safety}.",
+      "collections": "You have {amount} overdue. I've prioritized {count} customers worth chasing first.",
+      "payables": "You have {amount} in bills due within 14 days; {count} could be delayed or negotiated.",
+      "metrics": "You have about {runway} days of runway and a DSO of {dso} days.",
+      "draftReady": "I drafted a collection message for {name} to recover about {amount}.",
+      "compliance": "นี่เป็นแนวทางทั่วไป — ตรวจสอบรายละเอียดเฉพาะกับผู้เชี่ยวชาญที่มีคุณวุฒิ",
+      "noOverdue": "Nothing is overdue right now, so there's no collection message to draft.",
+      "noBank": "I can't see a bank balance yet. Connect a bank or accounting source.",
+      "noForecast": "I can't build a forecast yet. Connect a data source to get started.",
+      "noAr": "I can't see receivables yet. Connect an accounting or payments source.",
+      "noAp": "I can't see payables yet. Connect an accounting source.",
+      "noMetrics": "I need connected data before I can compute your metrics.",
+      "unknown": "ฉันยังไม่แน่ใจในเรื่องนั้น ลองถามเกี่ยวกับรายได้ กระแสเงินสด ลูกค้า หรือพนักงาน"
+    },
+    "ev": {
+      "bankBalance": "Bank balance: {amount}",
+      "lowestCash": "เงินสดต่ำสุดที่คาด: {amount}",
+      "safetyLine": "เส้นปลอดภัย: {amount}",
+      "overdueAr": "Overdue receivables: {amount}",
+      "target": "{name}: recover {amount} ({days}d overdue)",
+      "upcomingAp": "Bills due in 14 days: {amount}",
+      "payablePlan": "{name}: defer {amount} by {days} days",
+      "cashAtRisk": "Cash at risk: {amount}",
+      "expectedRecovered": "Expected recoverable cash: {amount}",
+      "dso": "Days sales outstanding: {days}",
+      "draftFirst": "ไม่มีอะไรถูกส่งจนกว่าคุณจะอนุมัติ",
+      "operationalOnly": "ATLAS gives operational guidance, not formal tax/legal/lending advice.",
+      "tryAsking": "Try: cash runway, who to chase, or which bills to delay."
+    },
+    "risk": {
+      "breach": "Cash is projected to fall below your safety line within 13 weeks.",
+      "staleAr": "{amount} of receivables are over 90 days old and may be hard to recover."
+    },
+    "next": {
+      "collectFirst": "Chase the largest overdue invoice first — it frees the most cash.",
+      "collectTop": "Start with {name}, your highest-priority overdue account.",
+      "negotiate": "Open a payment-term conversation with {name}.",
+      "reviewDraft": "Review the draft, then approve to add it to the Action Center.",
+      "consultPro": "Confirm tax, legal or lending specifics with a licensed professional."
+    },
+    "missing": {
+      "bank": "Bank balance",
+      "ar": "Receivables",
+      "ap": "Payables",
+      "forecast": "Forecast inputs",
+      "metrics": "Metrics inputs"
+    },
+    "connect": {
+      "bank": "Connect a bank or accounting source",
+      "ar": "Connect an accounting or payments source",
+      "ap": "Connect an accounting source",
+      "forecast": "Connect bank + AR + AP to forecast",
+      "metrics": "Connect your financial sources"
+    },
+    "tool": {
+      "getBankPosition": "Read the current bank balance.",
+      "getForecast": "Run the 13-week cash forecast for a scenario.",
+      "getReceivablesAging": "Summarize receivables by aging bucket.",
+      "getCollectionTargets": "Rank overdue invoices to chase first.",
+      "getPayablesPlan": "Classify bills as must-pay, can-delay or can-negotiate.",
+      "getMetrics": "Read dashboard metrics (runway, DSO, cash at risk).",
+      "draftCollectionMessage": "Draft a collection message for review.",
+      "draftVendorNegotiation": "Draft a vendor payment-term request for review."
+    }
   },
   "validation": {
     "required": "ช่องนี้จำเป็น",
     "positiveAmount": "จำนวนเงินต้องมากกว่าศูนย์",
-    "invalidNumber": "กรุณากรอกตัวเลขที่ถูกต้อง"
+    "invalidNumber": "กรุณากรอกตัวเลขที่ถูกต้อง",
+    "selectOne": "Please select at least one option"
   },
   "empty": {
     "generic": "ยังไม่มีอะไรที่นี่"
-  },
-  "country": {
-    "CN": "จีน",
-    "TW": "ไต้หวัน",
-    "US": "สหรัฐอเมริกา",
-    "JP": "ญี่ปุ่น",
-    "KR": "เกาหลีใต้",
-    "MX": "เม็กซิโก",
-    "BR": "บราซิล",
-    "IN": "อินเดีย",
-    "ID": "อินโดนีเซีย",
-    "TH": "ไทย",
-    "VN": "เวียดนาม",
-    "AE": "สหรัฐอาหรับเอมิเรตส์",
-    "SA": "ซาอุดีอาระเบีย",
-    "GB": "สหราชอาณาจักร",
-    "SG": "สิงคโปร์"
-  },
-  "ai": {
-    "answer": {
-      "finance": "วันนี้คุณมีรายรับ {revenue} ใช้จ่าย {expenses} เหลือกำไรประมาณ {profit}",
-      "cashflowSafe": "คุณรับมือช่วงที่จะถึงได้ เงินสดต่ำสุดที่คาดคือ {lowest} ซึ่งสูงกว่าเส้นปลอดภัย {safety}",
-      "cashflowRisk": "เงินสดกำลังจะตึง เงินสดที่คาดอาจลดเหลือ {lowest} ซึ่งต่ำกว่าเส้นปลอดภัย {safety}",
-      "customers": "ลูกค้า {count} รายดูเสี่ยงจะหายไปและคุ้มที่จะติดต่อ",
-      "staffing": "{present} จาก {total} คนเข้างานแล้ว พรุ่งนี้ควรจัดราว {suggested} คนน่าจะเหมาะสม",
-      "draft": "ฉันร่างข้อความให้คุณตรวจก่อนส่งแล้ว",
-      "report": "ฉันสร้างรายงานรายเดือนด้วยภาษาง่าย ๆ ให้คุณได้",
-      "peer": "นี่คือการเทียบแบบนิรนามกับธุรกิจที่คล้ายกัน",
-      "compliance": "นี่เป็นแนวทางทั่วไป — ตรวจสอบรายละเอียดเฉพาะกับผู้เชี่ยวชาญที่มีคุณวุฒิ",
-      "unknown": "ฉันยังไม่แน่ใจในเรื่องนั้น ลองถามเกี่ยวกับรายได้ กระแสเงินสด ลูกค้า หรือพนักงาน"
-    },
-    "ev": {
-      "todayRevenue": "รายรับวันนี้: {amount}",
-      "todayExpenses": "รายจ่ายวันนี้: {amount}",
-      "monthRevenue": "รายได้จนถึงตอนนี้: {amount}",
-      "safetyLine": "เส้นปลอดภัย: {amount}",
-      "lowestCash": "เงินสดต่ำสุดที่คาด: {amount}",
-      "openReceivables": "ลูกหนี้ค้าง {count} ราย รวม {amount}",
-      "customerVisits": "{name}: มา {visits} ครั้ง",
-      "clockedIn": "{name} เข้างานแล้ว",
-      "notClockedIn": "{name} ยังไม่เข้างาน",
-      "draftFirst": "ไม่มีอะไรถูกส่งจนกว่าคุณจะอนุมัติ",
-      "reportScope": "รวมรายได้ ต้นทุน กระแสเงินสด ทีม และลูกค้า",
-      "anonymity": "การเปรียบเทียบทั้งหมดถูกรวมและทำให้นิรนาม"
-    },
-    "risk": {
-      "negativeProfit": "วันนี้คุณใช้จ่ายมากกว่าที่หาได้",
-      "cashflowDanger": "เงินสดอาจต่ำกว่าเส้นปลอดภัยในช่วงพยากรณ์",
-      "churn": "ลูกค้าประจำบางรายไม่ได้กลับมาเร็ว ๆ นี้"
-    },
-    "next": {
-      "reviewMonth": "เทียบต้นทุนเดือนนี้กับเดือนก่อน",
-      "collect": "เก็บลูกหนี้ที่เกินกำหนดก่อน — ปลดล็อกเงินสดได้มากที่สุด",
-      "winback": "ส่งข้อความดึงกลับอย่างเป็นมิตรถึงลูกค้าประจำที่เสี่ยงหาย",
-      "schedule": "ปรับตารางพรุ่งนี้ให้ตรงกับความต้องการที่คาด",
-      "generateReport": "สร้างรายงานรายเดือนเพื่อเห็นภาพรวมทั้งหมด"
-    },
-    "tools": {
-      "getRevenueSummary": "สรุปรายได้ตามช่วงเวลา",
-      "getExpenseSummary": "สรุปรายจ่ายตามหมวดหมู่",
-      "getCashflowForecast": "พยากรณ์เงินสดสำหรับวันข้างหน้า",
-      "getReceivables": "รายการลูกหนี้ (เลือกตามสถานะได้)",
-      "getPayables": "รายการเจ้าหนี้ (เลือกตามสถานะได้)",
-      "getTopProducts": "จัดอันดับสินค้าตามยอดขายหรือจำนวน",
-      "getEmployeeAttendance": "เช็กว่าใครเข้างานวันนี้",
-      "getCustomerRiskSegments": "จัดกลุ่มลูกค้าตามความเสี่ยงหาย",
-      "draftMessage": "ร่างข้อความให้เจ้าของตรวจ",
-      "createTask": "สร้างงานหรือการแจ้งเตือน",
-      "logAiRecommendation": "บันทึกคำแนะนำ AI ลงบันทึกการตรวจสอบ"
-    }
-  },
-  "mock": {
-    "tx": {
-      "lunchService": "บริการมื้อกลางวัน",
-      "takeaway": "สั่งกลับบ้าน",
-      "cateringDeposit": "มัดจำจัดเลี้ยง",
-      "freshProduce": "วัตถุดิบสด",
-      "gasRefill": "เติมแก๊ส",
-      "deliveryFee": "ค่าคอมแพลตฟอร์มเดลิเวอรี",
-      "dailySales": "ยอดขายรายวัน",
-      "supplierDelivery": "การส่งของจากซัพพลายเออร์",
-      "weekendSales": "ยอดขายสุดสัปดาห์",
-      "monthlyRent": "ค่าเช่ารายเดือน"
-    },
-    "receivable": {
-      "companyCatering": "ออเดอร์จัดเลี้ยงบริษัท",
-      "eventBalance": "ยอดคงเหลืองานอีเวนต์"
-    },
-    "payable": {
-      "meatSupplier": "บิลซัพพลายเออร์เนื้อ",
-      "vegWholesaler": "บิลค้าส่งผัก",
-      "payroll": "เงินเดือนพนักงาน"
-    },
-    "vendor": {
-      "meatSupplier": "ไพรม์ มีต",
-      "vegWholesaler": "กรีนลีฟ โฮลเซล",
-      "payroll": "เงินเดือน"
-    },
-    "customer": {
-      "hongtuTech": "หงถู เทค",
-      "mrWang": "คุณหวัง",
-      "lilyChen": "ลิลี่ เฉิน",
-      "zhangFamily": "ครอบครัวจาง",
-      "oldTownOffice": "ออฟฟิศพาร์คเมืองเก่า"
-    },
-    "employee": {
-      "chefLiu": "เชฟหลิว",
-      "mei": "เหมย",
-      "jun": "จุน",
-      "auntZhao": "ป้าจ้าว",
-      "kevin": "เควิน"
-    },
-    "product": {
-      "beefNoodles": "ก๋วยเตี๋ยวเนื้อ",
-      "dumplings": "เกี๊ยว",
-      "coldDrinks": "เครื่องดื่มเย็น"
-    },
-    "action": {
-      "collectPayment": {
-        "title": "เก็บลูกหนี้ที่เกินกำหนด {count} ราย",
-        "reason": "{amount} เกินกำหนดและกำลังล็อกเงินสดที่คุณใช้ได้ตอนนี้",
-        "draft": "สวัสดีค่ะ/ครับ แจ้งเตือนอย่างเป็นมิตรว่าใบแจ้งหนี้ {amount} เลยกำหนดแล้ว รบกวนแจ้งวันที่คาดว่าจะชำระได้ไหมคะ/ครับ ขอบคุณค่ะ/ครับ!",
-        "ev1": "ลูกหนี้หนึ่งรายเลยวันครบกำหนด",
-        "ev2": "การเก็บคืนปลดล็อกเงินทุนหมุนเวียน {amount}"
-      },
-      "winback": {
-        "title": "ดึงลูกค้าประจำที่หายไปกลับมา",
-        "reason": "ลูกค้าประจำที่มา {visits} ครั้งไม่ได้กลับมา {days} วันแล้ว",
-        "draft": "สวัสดีค่ะ/ครับ! คิดถึงคุณนะคะ/ครับ แวะมาสัปดาห์นี้รับของเล็ก ๆ น้อย ๆ จากเรา — อยากเจอคุณอีกครั้ง",
-        "ev1": "มาครั้งล่าสุดเมื่อ {days} วันก่อน"
-      },
-      "delayPayment": {
-        "title": "ขอเลื่อนชำระระยะสั้นกับซัพพลายเออร์",
-        "reason": "เลื่อน {amount} ออกไป {days} วันช่วยบรรเทาวันที่เงินตึง",
-        "draft": "สวัสดีค่ะ/ครับ เราให้คุณค่ากับความร่วมมือนี้ ขอเลื่อนการชำระ {amount} นี้ออกไป {days} วันได้ไหมคะ/ครับ เราจะยืนยันวันใหม่เป็นลายลักษณ์อักษร",
-        "ev1": "การชำระ {amount} ตกในวันที่เงินสดตึง"
-      }
-    },
-    "insight": {
-      "tightCash": {
-        "title": "เงินสดจะตึงในสัปดาห์หน้า",
-        "summary": "การจ่ายซัพพลายเออร์และเงินเดือนมาพร้อมกับลูกหนี้ที่เกินกำหนด",
-        "ev1": "ลูกหนี้เกินกำหนดรวม {amount}",
-        "ev2": "เจ้าหนี้ครบกำหนดในสัปดาห์เดียวกัน",
-        "ev3": "เงินเดือนก็มีกำหนดในช่วงนี้ด้วย"
-      }
-    },
-    "network": {
-      "groupBuy": {
-        "oil": "ซื้อร่วมน้ำมันปรุงอาหาร",
-        "coldChain": "ใช้เดลิเวอรีแบบควบคุมอุณหภูมิร่วมกัน"
-      }
-    }
   }
 }
