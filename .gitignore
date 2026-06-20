@@ -21,3 +21,4 @@ auralis/node_modules
 auralis/out
 auralis/tsconfig.tsbuildinfo
 core
+/out/
